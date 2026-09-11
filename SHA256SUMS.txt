@@ -56,3 +56,4 @@ aa4550f09c3f2d95a6c62ae43cec22af2edbbd99f722e691ceefeca761fc6a7c  packages/xunit
 99ca555fe9b447b1747aff426819db6a2f60b6ee0655caa28c4b91a9ef3d0f48  packages/xunit.extensibility.core.2.9.3.nupkg
 dabc4cb360ede1c01c98e14cc0fe587774693f40679a22fc71794acac5d8d23c  packages/xunit.extensibility.execution.2.9.3.nupkg
 3b9eb9efcf3840695db33b045901420d14d7562141999e06182fb8894faeb124  packages/xunit.runner.visualstudio.3.1.5.nupkg
+f8dffe9a59cd1df4e00e4c204e16ebf0cfa7c56d0fff9c9554033269c4c556ab  packages/microsoft.netcore.app.host.win-x64.8.0.24.nupkg

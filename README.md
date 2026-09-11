@@ -1,6 +1,6 @@
 # .NET SDK 8.0.418 / net8.0 离线测试与 Blazor 前后端分离依赖
 
-本仓库提供可直接用于离线 NuGet 源的 **58 个原始 `.nupkg` 文件**，并附带独立 Blazor WebAssembly 前端、ASP.NET Core API 后端和验证测试。
+本仓库提供可直接用于离线 NuGet 源的 **59 个原始 `.nupkg` 文件**，并附带独立 Blazor WebAssembly 前端、ASP.NET Core API 后端和验证测试。
 
 独立包位于 [`packages/`](packages/)；完整 ZIP 及其 SHA-256 文件位于 [最新 Release](https://github.com/Cheriyang/dotnet-8.0.418-test-nuget-offline/releases/latest)。目标框架为 **net8.0**，验证 SDK 固定为 **8.0.418**，ASP.NET Core / 运行时版本固定为该 SDK 自带的 **8.0.24**。
 
@@ -81,3 +81,9 @@ dotnet run --project sample/Client/Client.csproj --no-restore --urls http://127.
 - [Microsoft：Blazor 使用 SignalR](https://learn.microsoft.com/aspnet/core/blazor/tutorials/signalr-blazor?view=aspnetcore-8.0)
 
 各包保持原始内容，版权和许可证属于原发布者，请查看包内 `.nuspec` 和许可证文件。
+
+## 补充：Windows x64 AppHost 8.0.24
+
+已单独补充 [`microsoft.netcore.app.host.win-x64.8.0.24.nupkg`](packages/microsoft.netcore.app.host.win-x64.8.0.24.nupkg)。此包中的 `apphost.exe` 已核对，与经微软 SHA-512 校验的 SDK 8.0.418 所带 Host pack 完全一致。原验证机器的 SDK 已预装此 Host pack，所以初始还原未从 NuGet 下载；缺少预装 pack 的机器可从当前 `packages/` 获取。
+
+当前仓库共 59 个包；既有 v2.0.0 Release ZIP 保持原来的 58 个包，使用该 ZIP 时请将此补充包放入解压后的 `packages/` 目录。

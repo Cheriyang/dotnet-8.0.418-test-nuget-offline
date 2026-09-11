@@ -874,6 +874,19 @@
       ],
       "kind": "PackageReference",
       "source": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/3.1.5/xunit.runner.visualstudio.3.1.5.nupkg"
+    },
+    {
+      "id": "microsoft.netcore.app.host.win-x64",
+      "version": "8.0.24",
+      "file": "packages/microsoft.netcore.app.host.win-x64.8.0.24.nupkg",
+      "size": 5476009,
+      "sha256": "f8dffe9a59cd1df4e00e4c204e16ebf0cfa7c56d0fff9c9554033269c4c556ab",
+      "sha512": "7e16ff3243abd912431edc65f7128666492b3b58056d9491500e22a5baa05538dc3d05be200496d1f1d6c7866f6b3cbc1b85263c012fda57ad054169d27a285a",
+      "projects": [
+        "Server"
+      ],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.host.win-x64/8.0.24/microsoft.netcore.app.host.win-x64.8.0.24.nupkg"
     }
   ]
 }
