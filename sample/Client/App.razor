@@ -1,0 +1,35 @@
+@inject HttpClient Http
+@implements IAsyncDisposable
+
+<h1>Blazor WebAssembly + independent ASP.NET Core API</h1>
+<p>Backend: http://127.0.0.1:5181</p>
+<button @onclick="CheckApi">Call API</button>
+<button @onclick="CheckHub">Call SignalR hub</button>
+<p role="status">@status</p>
+
+@code {
+    string status = "Ready";
+    HubConnection? connection;
+    async Task CheckApi()
+    {
+        try { status = await Http.GetStringAsync("/api/hello"); }
+        catch (Exception ex) { status = ex.Message; }
+    }
+    async Task CheckHub()
+    {
+        try
+        {
+            if (connection is null)
+            {
+                connection = new HubConnectionBuilder().WithUrl("http://127.0.0.1:5181/hubs/echo").Build();
+                await connection.StartAsync();
+            }
+            status = await connection.InvokeAsync<string>("Echo", "Hello from WebAssembly");
+        }
+        catch (Exception ex) { status = ex.Message; }
+    }
+    public async ValueTask DisposeAsync()
+    {
+        if (connection is not null) await connection.DisposeAsync();
+    }
+}

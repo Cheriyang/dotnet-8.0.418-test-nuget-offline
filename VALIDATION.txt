@@ -1,9 +1,11 @@
-SDK: 8.0.418 (version verified)
-Target framework: net8.0
+SDK: 8.0.418
+TFM: net8.0
+Runtime: 8.0.24
 Host: Windows x64
-Package count: 88 (3 direct + 85 transitive)
-Restore: PASS --locked-mode, empty isolated package cache, local packages/ source only
-Online NuGet sources: none (confirmed from project.assets.json)
-NuGetAudit: disabled for offline restore; certificate revocation mode: offline
-Test: PASS, sample xUnit assertion, dotnet test --no-restore
-Package integrity: archive CRC, SHA-512 against NuGet download cache, and content hash against lock file verified
+Restore: PASS, four projects, empty isolated cache, local packages/ only, locked mode
+Unit test: PASS, 1 test
+API/CORS/SignalR integration: PASS, real HTTP and hub round trip
+Blazor WebAssembly: PASS, build and Release publish, no AOT
+ASP.NET Core backend: PASS, build and win-x64 self-contained Release publish
+NuGetAudit disabled for offline proof; no online vulnerability assessment claimed
+All original nupkg SHA-512 hashes match NuGet downloaded cache

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net8.0": {
+      "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+        "type": "Direct",
+        "requested": "[8.0.24, 8.0.24]",
+        "resolved": "8.0.24",
+        "contentHash": "dCtUeUhoYgcH3pJZ6mpRZ73r+yOvGCKQZJ1xYWk+yxA1Z+PeKPC/kiKIIcTsZVz3MdGBB63GRExZ8kIpZgNCuA=="
+      }
+    },
+    "net8.0/win-x64": {}
+  }
+}

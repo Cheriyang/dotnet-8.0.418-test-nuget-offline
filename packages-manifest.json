@@ -1,1559 +1,879 @@
 {
   "sdk": "8.0.418",
   "targetFramework": "net8.0",
+  "runtime": "8.0.24",
+  "platforms": [
+    "browser-wasm",
+    "win-x64"
+  ],
+  "projects": {
+    "Tests": [
+      "microsoft.codecoverage/17.14.1",
+      "microsoft.net.test.sdk/17.14.1",
+      "microsoft.testplatform.objectmodel/17.14.1",
+      "microsoft.testplatform.testhost/17.14.1",
+      "newtonsoft.json/13.0.3",
+      "system.collections.immutable/8.0.0",
+      "system.reflection.metadata/8.0.0",
+      "xunit.abstractions/2.0.3",
+      "xunit.analyzers/1.18.0",
+      "xunit.assert/2.9.3",
+      "xunit.core/2.9.3",
+      "xunit.extensibility.core/2.9.3",
+      "xunit.extensibility.execution/2.9.3",
+      "xunit.runner.visualstudio/3.1.5",
+      "xunit/2.9.3"
+    ],
+    "Client": [
+      "microsoft.aspnetcore.authorization/8.0.24",
+      "microsoft.aspnetcore.components.analyzers/8.0.24",
+      "microsoft.aspnetcore.components.forms/8.0.24",
+      "microsoft.aspnetcore.components.web/8.0.24",
+      "microsoft.aspnetcore.components.webassembly.devserver/8.0.24",
+      "microsoft.aspnetcore.components.webassembly/8.0.24",
+      "microsoft.aspnetcore.components/8.0.24",
+      "microsoft.aspnetcore.connections.abstractions/8.0.24",
+      "microsoft.aspnetcore.http.connections.client/8.0.24",
+      "microsoft.aspnetcore.http.connections.common/8.0.24",
+      "microsoft.aspnetcore.metadata/8.0.24",
+      "microsoft.aspnetcore.signalr.client.core/8.0.24",
+      "microsoft.aspnetcore.signalr.client/8.0.24",
+      "microsoft.aspnetcore.signalr.common/8.0.24",
+      "microsoft.aspnetcore.signalr.protocols.json/8.0.24",
+      "microsoft.extensions.configuration.abstractions/8.0.0",
+      "microsoft.extensions.configuration.binder/8.0.2",
+      "microsoft.extensions.configuration.fileextensions/8.0.1",
+      "microsoft.extensions.configuration.json/8.0.1",
+      "microsoft.extensions.configuration/8.0.0",
+      "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "microsoft.extensions.dependencyinjection/8.0.1",
+      "microsoft.extensions.features/8.0.24",
+      "microsoft.extensions.fileproviders.abstractions/8.0.0",
+      "microsoft.extensions.fileproviders.physical/8.0.0",
+      "microsoft.extensions.filesystemglobbing/8.0.0",
+      "microsoft.extensions.logging.abstractions/8.0.3",
+      "microsoft.extensions.logging/8.0.1",
+      "microsoft.extensions.options/8.0.2",
+      "microsoft.extensions.primitives/8.0.0",
+      "microsoft.jsinterop.webassembly/8.0.24",
+      "microsoft.jsinterop/8.0.24",
+      "microsoft.net.illink.tasks/8.0.24",
+      "microsoft.net.sdk.webassembly.pack/8.0.24",
+      "system.io.pipelines/8.0.0",
+      "system.threading.channels/8.0.0"
+    ],
+    "Server": [
+      "microsoft.aspnetcore.components.webassembly.server/8.0.24"
+    ],
+    "IntegrationTests": [
+      "microsoft.aspnetcore.components.webassembly.server/8.0.24",
+      "microsoft.aspnetcore.connections.abstractions/8.0.24",
+      "microsoft.aspnetcore.http.connections.client/8.0.24",
+      "microsoft.aspnetcore.http.connections.common/8.0.24",
+      "microsoft.aspnetcore.signalr.client.core/8.0.24",
+      "microsoft.aspnetcore.signalr.client/8.0.24",
+      "microsoft.aspnetcore.signalr.common/8.0.24",
+      "microsoft.aspnetcore.signalr.protocols.json/8.0.24",
+      "microsoft.codecoverage/17.14.1",
+      "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "microsoft.extensions.dependencyinjection/8.0.1",
+      "microsoft.extensions.features/8.0.24",
+      "microsoft.extensions.logging.abstractions/8.0.3",
+      "microsoft.extensions.logging/8.0.1",
+      "microsoft.extensions.options/8.0.2",
+      "microsoft.extensions.primitives/8.0.0",
+      "microsoft.net.test.sdk/17.14.1",
+      "microsoft.testplatform.objectmodel/17.14.1",
+      "microsoft.testplatform.testhost/17.14.1",
+      "newtonsoft.json/13.0.3",
+      "system.collections.immutable/8.0.0",
+      "system.io.pipelines/8.0.0",
+      "system.reflection.metadata/8.0.0",
+      "system.threading.channels/8.0.0",
+      "xunit.abstractions/2.0.3",
+      "xunit.analyzers/1.18.0",
+      "xunit.assert/2.9.3",
+      "xunit.core/2.9.3",
+      "xunit.extensibility.core/2.9.3",
+      "xunit.extensibility.execution/2.9.3",
+      "xunit.runner.visualstudio/3.1.5",
+      "xunit/2.9.3"
+    ]
+  },
   "packages": [
     {
-      "id": "Microsoft.CodeCoverage",
-      "version": "17.8.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/microsoft.codecoverage.17.8.0.nupkg",
-      "size": 9139132,
-      "sha256": "72fff00177d3352f91584b0758d2aa4431c2ecb3904927452756bd719b927c9c",
-      "sha512": "bbfb44e01038c77dc33c175478c5f1107bda23536cfc212c14060385c5e41145411550462f6665924883788fbf66477d2f517acb28c51fad53c0f895ceec288c",
-      "nugetContentHash": "KC8SXWbGIdoFVdlxKk9WHccm0llm9HypcHMLUUFabRiTS3SO2fQXNZfdiF3qkEdTJhbRrxhdRxjL4jbtwPq4Ew==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg"
-    },
-    {
-      "id": "Microsoft.NET.Test.Sdk",
-      "version": "17.8.0",
-      "type": "Direct",
-      "dependencies": {
-        "Microsoft.CodeCoverage": "17.8.0",
-        "Microsoft.TestPlatform.TestHost": "17.8.0"
-      },
-      "file": "packages/microsoft.net.test.sdk.17.8.0.nupkg",
-      "size": 37824,
-      "sha256": "bb3ed0bd6f8db1546ca7c151d708e71843a451a3d7e09ca27b2c2f08dea0dbeb",
-      "sha512": "f211f2610137cd114621bd6c8418e52a64149af37c176a79f418892fadb6d5dba31ea4622a95c67e50b32a92fb1b1d5d7fb980502c5c9570dcc4c3258c6787e9",
-      "nugetContentHash": "BmTYGbD/YuDHmApIENdoyN1jCk0Rj1fJB0+B/fVekyTdVidr91IlzhqzytiUgaEAzL1ZJcYCme0MeBMYvJVzvw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.8.0/microsoft.net.test.sdk.17.8.0.nupkg"
-    },
-    {
-      "id": "Microsoft.NETCore.Platforms",
-      "version": "1.1.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/microsoft.netcore.platforms.1.1.0.nupkg",
-      "size": 17960,
-      "sha256": "15e338d24b5c39b4099389cc612841eb51ff13c07bb4829f97d39b27420e7023",
-      "sha512": "6bf892c274596fe2c7164e3d8503b24e187f64d0b7bec6d9b05eb95f04086fceb7a85ea6b2685d42dc465c52f6f0e6f636c0b3fddac48f6f0125dfd83e92d106",
-      "nugetContentHash": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg"
-    },
-    {
-      "id": "Microsoft.NETCore.Targets",
-      "version": "1.1.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/microsoft.netcore.targets.1.1.0.nupkg",
-      "size": 18162,
-      "sha256": "d00a90da0312f22365624ac3f81c6d220edc5cc9ebf71647b4a02e3786e37da4",
-      "sha512": "1ef033a68688aab9997ec1c0378acb1638b4afb618e533fcaf749d93389737ba94f4a0a94481becdf701c7e988ae2fe390136a8eae225887ee60db45063490fe",
-      "nugetContentHash": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg"
-    },
-    {
-      "id": "Microsoft.TestPlatform.ObjectModel",
-      "version": "17.8.0",
-      "type": "Transitive",
-      "dependencies": {
-        "NuGet.Frameworks": "6.5.0",
-        "System.Reflection.Metadata": "1.6.0"
-      },
-      "file": "packages/microsoft.testplatform.objectmodel.17.8.0.nupkg",
-      "size": 1492114,
-      "sha256": "f53c06ae356f6edc9eb70ebb51da7710c2b9317f23d111518ddbb13c2b3d112c",
-      "sha512": "17119c472fd87ff721677f92a801693eab53a1897582150c26a60429c99eb1764628e7ba895b40e3b10b9edc00f803b18316a6fdc906ffe54dbd2d04ac63db33",
-      "nugetContentHash": "AYy6vlpGMfz5kOFq99L93RGbqftW/8eQTqjT9iGXW6s9MRP3UdtY8idJ8rJcjeSja8A18IhIro5YnH3uv1nz4g==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.8.0/microsoft.testplatform.objectmodel.17.8.0.nupkg"
-    },
-    {
-      "id": "Microsoft.TestPlatform.TestHost",
-      "version": "17.8.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.TestPlatform.ObjectModel": "17.8.0",
-        "Newtonsoft.Json": "13.0.1"
-      },
-      "file": "packages/microsoft.testplatform.testhost.17.8.0.nupkg",
-      "size": 2806274,
-      "sha256": "f824d816eeb7d6ea2f2c23b8ed129ef3a61a02a7e82c0e2bef7bca391254b238",
-      "sha512": "39fb1549fd23fc2c7b4f5525043fc1152b8c62cc813a88c9701f33a666041c6690dadd455899d247fef5e6df372d17f081d6098839086007b2c10618e187ac7a",
-      "nugetContentHash": "9ivcl/7SGRmOT0YYrHQGohWiT5YCpkmy/UEzldfVisLm6QxbLaK3FAJqZXI34rnRLmqqDCeMQxKINwmKwAPiDw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.8.0/microsoft.testplatform.testhost.17.8.0.nupkg"
-    },
-    {
-      "id": "Microsoft.Win32.Primitives",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/microsoft.win32.primitives.4.3.0.nupkg",
-      "size": 63333,
-      "sha256": "98134398f5cd4d6e785cb9cf014c0146f90839114ceff8f40f42364b240f0c48",
-      "sha512": "366f07a79d72f6d61c2b7c43eaa938dd68dfb6b83599d1f6e02089b136fa82bec74b6d54d6e03e08a3c612d51c5596e3535cbc2b29f39b97a827b3e7c79826f0",
-      "nugetContentHash": "9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.win32.primitives/4.3.0/microsoft.win32.primitives.4.3.0.nupkg"
-    },
-    {
-      "id": "NETStandard.Library",
-      "version": "1.6.1",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.Win32.Primitives": "4.3.0",
-        "System.AppContext": "4.3.0",
-        "System.Collections": "4.3.0",
-        "System.Collections.Concurrent": "4.3.0",
-        "System.Console": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Diagnostics.Tools": "4.3.0",
-        "System.Diagnostics.Tracing": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.Globalization.Calendars": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.IO.Compression": "4.3.0",
-        "System.IO.Compression.ZipFile": "4.3.0",
-        "System.IO.FileSystem": "4.3.0",
-        "System.IO.FileSystem.Primitives": "4.3.0",
-        "System.Linq": "4.3.0",
-        "System.Linq.Expressions": "4.3.0",
-        "System.Net.Http": "4.3.0",
-        "System.Net.Primitives": "4.3.0",
-        "System.Net.Sockets": "4.3.0",
-        "System.ObjectModel": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Extensions": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Runtime.InteropServices.RuntimeInformation": "4.3.0",
-        "System.Runtime.Numerics": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Security.Cryptography.X509Certificates": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Text.Encoding.Extensions": "4.3.0",
-        "System.Text.RegularExpressions": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Threading.Tasks": "4.3.0",
-        "System.Threading.Timer": "4.3.0",
-        "System.Xml.ReaderWriter": "4.3.0",
-        "System.Xml.XDocument": "4.3.0"
-      },
-      "file": "packages/netstandard.library.1.6.1.nupkg",
-      "size": 17360,
-      "sha256": "88d6a7d62c7b46d9dc1960bd023019dac93bd03a313ac9843a0435d1f5e6e0fc",
-      "sha512": "0972dc2dbb4925e896f62bce2e59d4e48639320ee38ad3016dcd485fbd6936a0ed08073ad5eef2a612dff05dfc390f3930fff9e79d87a06070eeb8128277cbd0",
-      "nugetContentHash": "WcSp3+vP+yHNgS8EV5J7pZ9IRpeDuARBPN28by8zqff1wJQXm26PVU8L3/fYLBJVU7BtDyqNVWq2KlCVvSSR4A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/netstandard.library/1.6.1/netstandard.library.1.6.1.nupkg"
-    },
-    {
-      "id": "Newtonsoft.Json",
-      "version": "13.0.1",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/newtonsoft.json.13.0.1.nupkg",
-      "size": 2065787,
-      "sha256": "2b6b52556e27e1b7913f33eedeb95568110c746bd64afff74357f1683878323a",
-      "sha512": "83731b662eaf05379a23f8446ef47bbc111349dd4358b7bd8b51383fe9cf637e2fe62f78cea52a0d7bdd582dc6fbbb5837d4a7b1d53dcf37a0ae7473e21ee7b1",
-      "nugetContentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg"
-    },
-    {
-      "id": "NuGet.Frameworks",
-      "version": "6.5.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/nuget.frameworks.6.5.0.nupkg",
-      "size": 131644,
-      "sha256": "125a9f37809c2b14f784fdaabf1c4e6dbe269c19581bcf483313b44a6e686768",
-      "sha512": "3f97626af018fa9b03f06751054be2c4e8dbd0d5329de21662b36f3336849838bf5af7d3721643faa6ea90935f836cf502661573953176cff33d4d829d953d56",
-      "nugetContentHash": "QWINE2x3MbTODsWT1Gh71GaGb5icBz4chS8VYvTgsBnsi8esgN6wtHhydd7fvToWECYGq7T4cgBBDiKD/363fg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/nuget.frameworks/6.5.0/nuget.frameworks.6.5.0.nupkg"
-    },
-    {
-      "id": "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 44390,
-      "sha256": "2d750f2d7dc3271b14d4f7775308ced4f3bd34cd9e94d1035debb632efef369b",
-      "sha512": "b2cf809fe50c4b46bd6f2372265cd3059622550123afceb5dbb2410906c07a7f47bae4273584d29253d5e7a63a17c68c7ba0434608bbc8fd4d00e479b2f128ff",
-      "nugetContentHash": "HdSSp5MnJSsg08KMfZThpuLPJpPwE5hBXvHwoKWosyHHfe8Mh5WKT0ylEOf6yNzX6Ngjxe4Whkafh5q7Ymac4Q==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 42827,
-      "sha256": "a9e4aa69423cd3e96ac3930ae2f32998ed0265aaab99892dc29e8bfaf4006f42",
-      "sha512": "fd8e32d7d3e9a465202e391b0ab8b95e212900879bc4d8ac22954fd2d0f98fa579e9d25f88885ac2a4bf1eba755db940f8d131250a3ffec34dbe77431a379cab",
-      "nugetContentHash": "+yH1a49wJMy8Zt4yx5RhJrxO/DBDByAiCzNwiETI+1S4mPdCu0OY4djdciC7Vssk0l22wQaDLrXxXkp+3+7bVA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 42833,
-      "sha256": "4ab1ea4fdc2b081b3120b5ad68980629de8e766c66f3f321eca8740949195730",
-      "sha512": "4afac5cc1734330a6103880e790d639e825bfb1b34dbd42083762c47db5e5dab6c03efd16049ac03861d7d87746caed09c7534241d51b7341d47ba6af7e8dd31",
-      "nugetContentHash": "c3YNH1GQJbfIPJeCnr4avseugSqPrxwIqzthYyZDN6EuOyNOzq+y2KSUfRcXauya1sF4foESTgwM5e1A8arAKw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.native.System",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0"
-      },
-      "file": "packages/runtime.native.system.4.3.0.nupkg",
-      "size": 16854,
-      "sha256": "64165aa1d9e3bcb5c04d6a575da90581ccba3fe82386c8455e6825acbe710f96",
-      "sha512": "299c5a96fffdcaf1972e3e3d1c727837d18ac9e88cb79c09914f12ff1de7280dff10c9232a49a1c1d3ba7785a5cf76f28c9dce414f0a2a567688de7fd5331dc8",
-      "nugetContentHash": "c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.native.system/4.3.0/runtime.native.system.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.native.System.IO.Compression",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0"
-      },
-      "file": "packages/runtime.native.system.io.compression.4.3.0.nupkg",
-      "size": 16918,
-      "sha256": "0d69d7b38be52a853a5b1c6f080ad326ea55eac5f78816d987c49ba9f1da71ef",
-      "sha512": "bff1f0cac94327014bb07c1ebee06c216e6e4951b1ddaa0c8a753a4a0338be621fd15ec621503490dbca54a75809abc4f420669b33052b28d24d726ac79c9891",
-      "nugetContentHash": "INBPonS5QPEgn7naufQFXJEp3zX6L4bwHgJ/ZH78aBTpeNfQMtf7C6VrAFhlq2xxWBveIOWyFzQjJ8XzHMhdOQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.native.system.io.compression/4.3.0/runtime.native.system.io.compression.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.native.System.Net.Http",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0"
-      },
-      "file": "packages/runtime.native.system.net.http.4.3.0.nupkg",
-      "size": 16894,
-      "sha256": "739e7a3f285e470a588707818d27c8c04c991e701407c8d68a8c8a11ca7fd9d8",
-      "sha512": "ddd1e5b67545477f7c72b5883666de40e89efb0836d91e7a349e2f3d4ac05ce1125e6add3cb09c39cbdfe7ab7c5dc8fdaeaf6ac25acd92f6de3d8ce2d6db7918",
-      "nugetContentHash": "ZVuZJqnnegJhd2k/PtAbbIcZ3aZeITq3sj06oKfMBSfphW3HDmk/t4ObvbOk/JA/swGR0LNqMksAh/f7gpTROg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.native.system.net.http/4.3.0/runtime.native.system.net.http.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.native.System.Security.Cryptography.Apple",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple": "4.3.0"
-      },
-      "file": "packages/runtime.native.system.security.cryptography.apple.4.3.0.nupkg",
-      "size": 16967,
-      "sha256": "d88841bf48baa5370ecabf05148c9f3c469a087526259f036302d4c09fb9c1ac",
-      "sha512": "23c6a99b323cd71cdcb28c6faa71f099f69ff0972d5125607ae8bbc99ba7c08513571d14526e8c2805ab3a8b70d3d3a6dd76dfa193320393ecb05906ee91f37d",
-      "nugetContentHash": "DloMk88juo0OuOWr56QG7MNchmafTLYWvABy36izkrLI5VledI0rq28KGs1i9wbpeT9NPQrx/wTf8U2vazqQ3Q==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.native.system.security.cryptography.apple/4.3.0/runtime.native.system.security.cryptography.apple.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0",
-        "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 17048,
-      "sha256": "272d352a1b5c0a5db08cca59587f97ddf8477159fe4b296558563ccd6973ffa2",
-      "sha512": "ee5d047908b99b776ff9bb54856454b24b09a0f9271b127239543b1f5faa3381a032d9eeb4d813d01b5a4b7d183b6a16250f159fdc450d5314a7eace1550bea3",
-      "nugetContentHash": "NS1U+700m4KFRHR5o4vo9DSlTmlCKu/u7dtE5sUHVIPB+xpXxYQvgBgA6wEIeCz6Yfn0Z52/72WYsToCEPJnrw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.native.system.security.cryptography.openssl/4.3.0/runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.opensuse.13.2-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 44200,
-      "sha256": "c32bf4d20765a9ff1c93111d57b13e425f61248a0f726604bb27966f93b3de63",
-      "sha512": "81bdb93c1c86c560343df6cc367499fb2a01a9b3016617be416874a23c4355a8d95c7be34f175510f3fdea4872302a87c8efab98a328dfa39422db520c3f291c",
-      "nugetContentHash": "b3pthNgxxFcD+Pc0WSEoC0+md3MyhRS6aCEeenvNE3Fdw1HyJ18ZhRFVJJzIeR/O/jpxPboB805Ho0T3Ul7w8A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.opensuse.13.2-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.opensuse.42.1-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 44118,
-      "sha256": "ce2f9be2c085ac0f500624860c3ef13d5dbbaf78871a557df60a725548d199ce",
-      "sha512": "6de9544b4da49f127680cf5b3b4afea96bfcac3293038a1b0a12eea0ad60be368af31ee1dfd66d48d458b40200738c04aa0c71adcc54ae2dddbea2cd50d6f28d",
-      "nugetContentHash": "KeLz4HClKf+nFS7p/6Fi/CqyLXh81FpiGzcmuS8DGi9lUqSnZ6Es23/gv2O+1XVGfrbNmviF7CckBpavkBoIFQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.opensuse.42.1-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.Apple",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg",
-      "size": 19581,
-      "sha256": "b1eae477803b17a79c88f88f26d532272c73740b6ea4471621943d9e9b44cc83",
-      "sha512": "9929942914071e0ea0944a952ff9ad3c296be39e719a2f4bb3eac298d41829b4468b332fba880ebe242871a02145e1c26dc7660021375d12c7efcae4d200278a",
-      "nugetContentHash": "kVXCuMTrTlxq4XOOMAysuNwsXWpYeboGddNGpIgNSZmv1b6r/s/DPk0fYMB7Q5Qo4bY68o48jt4T4y5BVecbCQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple/4.3.0/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.apple.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 37682,
-      "sha256": "8326d053a98f81a595deb046d9d6c7ead4f7b41abc9a0cdedcf44e76cb969d7d",
-      "sha512": "61da1667a5dd1e53a5d19fbe90abbfe332d84fe755fb811a080668a47d41a97db44539e3174fd1d2a0770ff1bd83afa68c82ce06df5775da65a6054ccc12c4be",
-      "nugetContentHash": "X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.rhel.7-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 42668,
-      "sha256": "56c3fbd8656f7969c652f4bfbe33902efd54f341f62bc9d9e1f0c0988eb51e6e",
-      "sha512": "e65a6a1f1928cfb760c395a399542dc7f9087399c53874376604504ae60abd2da24ed735ebd148d335000a5e35c8108ea55404685e902df392eac2e8d38fb665",
-      "nugetContentHash": "nyFNiCk/r+VOiIqreLix8yN+q3Wga9+SE8BCgkf+2BwEKiNx6DyvFjCgkfV743/grxv8jHJ8gUK4XEQw7yzRYg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.rhel.7-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 43118,
-      "sha256": "e322866bf22b3422ae437cda0f320b74d3c3df66cd772eb1af981d2628321798",
-      "sha512": "c9f219515e268cf40e16b135bd64cba95c35e866dd9bc34954159562314d01d2f9ea7eb8b0db94acf6bdac83d651d90bad7890cb657ffe40fa3440ec662c9944",
-      "nugetContentHash": "ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.ubuntu.16.04-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 42901,
-      "sha256": "1e674986146c895a0e382714bc0c1d8e93118b2b92c1d72012fda3f61c62f997",
-      "sha512": "4981b2d7a106703b185e176ad35bfda149156f3b752778fa71c56b3686407765fd2b6625de352bd563aac1e1e8769d7886cc59a0d5d0bfb41ed60277360beb81",
-      "nugetContentHash": "I8bKw2I8k58Wx7fMKQJn2R8lamboCAiHfHeV/pS65ScKWMMI0+wJkLYlEKvgW1D/XvSl/221clBoR2q9QNNM7A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "runtime.ubuntu.16.10-x64.runtime.native.System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 42939,
-      "sha256": "a551542ae3cf231d1e7502a3cd1a27df32aaf338731c4ce4a3f95cd3557f8ddc",
-      "sha512": "5dbe6bc007a9b46491e5299602291f5dbf8cc8d51e6c1b08db2fa0efd365990b41b6e181ed6bf82e873a659396427bc0e33e85b47d645d273fef8bf8ec643631",
-      "nugetContentHash": "VB5cn/7OzUfzdnC8tqAIMQciVLiq2epm2NrAm1E9OjNRyG4lVhfR61SMcLizejzQP8R8Uf/0l5qOIbUEi+RdEg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "System.AppContext",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.appcontext.4.3.0.nupkg",
-      "size": 147030,
-      "sha256": "ca0f792cd40ec05940d6d5b15dd42457226a4f8027a0373e0029ab36fcc68998",
-      "sha512": "0d6ea63006304708feae2cc0590d2cdd99327b682210822bb2803ac842fdf4d8d57170d7947c006eec4b5687c942768478a7ec109745472f3946d230732483e8",
-      "nugetContentHash": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Buffers",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Diagnostics.Tracing": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading": "4.3.0"
-      },
-      "file": "packages/system.buffers.4.3.0.nupkg",
-      "size": 35171,
-      "sha256": "5ea6566f829dd38f7ad21e14f6c7a2be32ac78603f60422976995f1d81d0f639",
-      "sha512": "3dcbf66f6edf7e9bb4f698cddcf81b9d059811d84e05c7ac618b2640efed642f089b0ef84c927c5f58feffe43bb96a6bcf4fec422529b82998b18d70e4648cbe",
-      "nugetContentHash": "ratu44uTIHgeBeI0dE8DWvmXVBSo4u7ozRZZHOMmK/JPpYyo0dAfgSiHlpiObMQ5lEtEyIXA40sKRYg5J6A8uQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.buffers/4.3.0/system.buffers.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Collections",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.collections.4.3.0.nupkg",
-      "size": 810001,
-      "sha256": "69f63b554b43eb0ff9998aab71ef2442bbc321f4b61970c834387bdc88f124a7",
-      "sha512": "ca7b952d30da1487ca4e43aa522817b5ee26e7e10537062810112fc67a7512766c39d402f394bb0426d1108bbcf9bbb64e9ce1f5af736ef215a51a35e55f051b",
-      "nugetContentHash": "3Dcj85/TBdVpL5Zr+gEEBUuFe2icOnLalmEh9hfck1PTYbbyWuZgh4fmm2ysCLTrqLQw6t3TgTyJ+VLp+Qb+Lw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.collections/4.3.0/system.collections.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Collections.Concurrent",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Diagnostics.Tracing": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.collections.concurrent.4.3.0.nupkg",
-      "size": 502676,
-      "sha256": "28c6390df2670de22c6b5dc3a6abf237c36445e644300167966360955a052172",
-      "sha512": "35c1aa3e636216fe5dc2ebeb504293e69ad6355d26e22453af060af94d8279faa93bdcfe127aecb0b316c7e7d9185bcac72e994984efdb7f2d8515f1f55cf682",
-      "nugetContentHash": "ztl69Xp0Y/UXCL+3v3tEU+lIy+bvjKNUmopn1wep/a291pVPK7dxBd6T7WnlQqRog+d1a/hSsgRsmFnIBKTPLQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.collections.concurrent/4.3.0/system.collections.concurrent.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Console",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Text.Encoding": "4.3.0"
-      },
-      "file": "packages/system.console.4.3.0.nupkg",
-      "size": 102397,
-      "sha256": "5e1dcf3c166bd290db0da2bc0041db746cfb78f2ba622d59c91588d4933a99ba",
-      "sha512": "a08a684a583c9b3278ce32be1007dae495f9d87254666392f794ef1203079f333cd7d388c28944ffa36fb49f0c8bb21f42c70f6e1d7c1c03920df6d0d1130c82",
-      "nugetContentHash": "DHDrIxiqk1h03m6khKWV2X8p/uvN79rgSqpilL6uzpmSfxfU5ng8VcPtW4qsDsQDHiTv6IPV9TmD5M/vElPNLg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.console/4.3.0/system.console.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Diagnostics.Debug",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.diagnostics.debug.4.3.0.nupkg",
-      "size": 149774,
-      "sha256": "7e403bf528cf6d27a211cadb6d4b1bef4bbd07bc2a6ec74cf6cd4b9e82a3d203",
-      "sha512": "6c58fe1e3618e7f87684c1cea7efc7d3b19bd7df8d2535f9e27b62c52f441f11b67b21225d6bcd62f409e02c2a16231c4db19be33b8fab5b9b0a5c8660ddab24",
-      "nugetContentHash": "ZUhUOdqmaG5Jk3Xdb8xi5kIyQYAA4PnTNlHx1mu9ZY3qv4ELIdKbnL/akbGaKi2RnNUWaZsAs31rvzFdewTj2g==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.debug/4.3.0/system.diagnostics.debug.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Diagnostics.DiagnosticSource",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Tracing": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading": "4.3.0"
-      },
-      "file": "packages/system.diagnostics.diagnosticsource.4.3.0.nupkg",
-      "size": 120125,
-      "sha256": "3852516f4ca07a9d19df20c12f002033f4e47ece09083b6c361c031fd71dd57c",
-      "sha512": "8f54df5ff382b6650e2e10d1043863a24bf49ff0714e779e837cd7073e46fb2635bcfcdcf99d7c4a9d95f35ebffd86ab0ca068305f4b245072e08303b917b34d",
-      "nugetContentHash": "tD6kosZnTAGdrEa0tZSuFyunMbt/5KYDnHdndJYGqZoNy00XVXyACd5d6KnE1YgYv3ne2CjtAfNXo/fwEhnKUA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.diagnosticsource/4.3.0/system.diagnostics.diagnosticsource.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Diagnostics.Tools",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.diagnostics.tools.4.3.0.nupkg",
-      "size": 67227,
-      "sha256": "8153afd522ba0297b415084256534e77d72f40a06f331457f4ad093d58bcc346",
-      "sha512": "164d6977e721cbceb44ede7bfd75b03b8d9771e0426aefa5d40c71867e964092fdc6a6808bcbc5559ed73ec2c532ca657d6476af79a49ca3ad879b8366f13d90",
-      "nugetContentHash": "UUvkJfSYJMM6x527dJg2VyWPSRqIVB0Z7dbjHst1zmwTXz5CcXSYJFWRpuigfbO1Lf7yfZiIaEUesfnl/g5EyA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.tools/4.3.0/system.diagnostics.tools.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Diagnostics.Tracing",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.diagnostics.tracing.4.3.0.nupkg",
-      "size": 581864,
-      "sha256": "8421136691c719584f62f6f80b47e1e33b3ef33bf818fa22c5a8242d98e96bd4",
-      "sha512": "d0a5d30e261cd45b7dfab02b7ffbd76b64e0c9b892ed826ea61481c983c0208b05b69981cd79e91cd4e5811e1cd4c3cea06a1afce05811ece58be5e4c20169ea",
-      "nugetContentHash": "rswfv0f/Cqkh78rA5S8eN8Neocz234+emGCtTF3lxPY96F+mmmUen6tbn0glN6PMvlKQb9bPAY5e9u7fgPTkKw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.diagnostics.tracing/4.3.0/system.diagnostics.tracing.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Globalization",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.globalization.4.3.0.nupkg",
-      "size": 589136,
-      "sha256": "71a2f4a51985484b1aa1e65e58de414d0b46ac0b5a40fc058bc60e64f646e6b2",
-      "sha512": "823d2ba308cb073b40a3146ecccd0d9fd7b1615ac3fbefb16f73d873e411fd81c3bdc87df206d3dc7e2f14c9cd53aafca684a3570c25471280aada8de805ece2",
-      "nugetContentHash": "kYdVd2f2PAdFGblzFswE4hkNANJBKRmsfa2X5LG2AcWE1c7/4t0pYae1L8vfZ5xvE2nK/R9JprtToA61OSHWIg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.globalization/4.3.0/system.globalization.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Globalization.Calendars",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Globalization": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.globalization.calendars.4.3.0.nupkg",
-      "size": 177689,
-      "sha256": "b8d383d043951609d2d9f30abcc884b48f5a3b0d34f8f7f2fc7faab9c01094f7",
-      "sha512": "e97190231402b393774b925efc02a2bfa41d1d117a17fb87da6e399f5234546962767e9cd8f39970efa408e4f453cd1e6751a2a61e366bc97406e1b0b8a4be86",
-      "nugetContentHash": "GUlBtdOWT4LTV3I+9/PJW+56AnnChTaOqqTLFtdmype/L500M2LIyXgmtd9X2P2VOkmJd5c67H5SaC2QcL1bFA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.globalization.calendars/4.3.0/system.globalization.calendars.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Globalization.Extensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Globalization": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0"
-      },
-      "file": "packages/system.globalization.extensions.4.3.0.nupkg",
-      "size": 142949,
-      "sha256": "9a6256036ed3d06455b853fdfec8fee13ad1e06256af33489363c3adbafb4509",
-      "sha512": "a4d360003f95e0c31edf39c0b91e1c73850a60ac5d0032b17db888a3c7d7134cef9acd97219d14174ad213b7c044f49b364cc5720073ebfcb6e1bf6e4ec24ce5",
-      "nugetContentHash": "FhKmdR6MPG+pxow6wGtNAWdZh7noIOpdD5TwQ3CprzgIE1bBBoim0vbR1+AWsWjQmU7zXHgQo4TWSP6lCeiWcQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.globalization.extensions/4.3.0/system.globalization.extensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.IO",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.io.4.3.0.nupkg",
-      "size": 703652,
-      "sha256": "aeeca74077a414fe703eb0e257284d891217799fc8f4da632b9a54f873c38916",
-      "sha512": "bfca5a21e3e1986b9765b13dc6fbcd6f8b89e4c1383855d1d7ef256bf1bf2f51889769db5365859dd7606fbf6454add4daeb3bab56994ffb98fd1d03fe8bc1e6",
-      "nugetContentHash": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.io/4.3.0/system.io.4.3.0.nupkg"
-    },
-    {
-      "id": "System.IO.Compression",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Buffers": "4.3.0",
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Threading.Tasks": "4.3.0",
-        "runtime.native.System": "4.3.0",
-        "runtime.native.System.IO.Compression": "4.3.0"
-      },
-      "file": "packages/system.io.compression.4.3.0.nupkg",
-      "size": 485197,
-      "sha256": "7f93eb4254208f95e3d999c7c575bc5e23a2bda06f7ea0daa3d49be805629f20",
-      "sha512": "f540ee51a3bb6941cdfbaace9a9738d7f7986a2f94770db61f45a88ecb7ef36b571d4c07417dc89cdbe9655a262b7cc599b0a4b78effea91819e186121b44807",
-      "nugetContentHash": "YHndyoiV90iu4iKG115ibkhrG+S3jBm8Ap9OwoUAzO5oPDAWcr0SFwQFm0HjM8WkEZWo0zvLTyLmbvTkW1bXgg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.io.compression/4.3.0/system.io.compression.4.3.0.nupkg"
-    },
-    {
-      "id": "System.IO.Compression.ZipFile",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Buffers": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.IO.Compression": "4.3.0",
-        "System.IO.FileSystem": "4.3.0",
-        "System.IO.FileSystem.Primitives": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Text.Encoding": "4.3.0"
-      },
-      "file": "packages/system.io.compression.zipfile.4.3.0.nupkg",
-      "size": 113746,
-      "sha256": "59097e2605acf8669131e89a8531546eb8655c81daa737294c55db46f02dbefb",
-      "sha512": "1860634672767f818f0192ec2b2750693f0d39390f3b7d400cc6fd4f6e74a5cbed27bf49e5980ec85ff3e161c30f6190f700e339a1040c1699b87eb4aa7b6792",
-      "nugetContentHash": "G4HwjEsgIwy3JFBduZ9quBkAu+eUwjIdJleuNSgmUojbH6O3mlvEIme+GHx/cLlTAPcrnnL7GqvB9pTlWRfhOg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.io.compression.zipfile/4.3.0/system.io.compression.zipfile.4.3.0.nupkg"
-    },
-    {
-      "id": "System.IO.FileSystem",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.IO.FileSystem.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.io.filesystem.4.3.0.nupkg",
-      "size": 274316,
-      "sha256": "bcd2189ef95acae563d167d17d82a90eb843a6d961a75a4df026269557764d7c",
-      "sha512": "4fb581d6f85b9529a091a0e974633752aa39e50b2be6c8a9e5eca8c2bc225cea07064ccec7778f77df9987deebf4dccec050b1a97edac0ee9107142e6a8ee7ee",
-      "nugetContentHash": "3wEMARTnuio+ulnvi+hkRNROYwa1kylvYahhcLk4HSoVdl+xxTFVeVlYOfLwrDPImGls0mDqbMhrza8qnWPTdA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem/4.3.0/system.io.filesystem.4.3.0.nupkg"
-    },
-    {
-      "id": "System.IO.FileSystem.Primitives",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.io.filesystem.primitives.4.3.0.nupkg",
-      "size": 94996,
-      "sha256": "2cc9df83c5706afb3d70c9eaf67347f085ad02d49f934fc5cb8b3846df6bd648",
-      "sha512": "5885953d09582cffd973d23a21a929064d72f2bc9518af3732d671fffcc628a8b686f1d058a001ee6a114023b3e48b3fc0d0e4b22629a1c7f715e03795ee9ee5",
-      "nugetContentHash": "6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Linq",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0"
-      },
-      "file": "packages/system.linq.4.3.0.nupkg",
-      "size": 512550,
-      "sha256": "479ba248bde5e9add7ad74922fa8f3faafcf732550cc4001ca2b9764d4aa0ff0",
-      "sha512": "eacc7fe1ec526f405f5ba0e671f616d0e5be9c1828d543a9e2f8c65df4099d6b2ea4a9fa2cdae4f34b170dc37142f60e267e137ca39f350281ed70d2dc620458",
-      "nugetContentHash": "5DbqIUpsDp0dFftytzuMmc0oeMdQwjcP/EWxsksIz/w1TcFRkZ3yKKz0PqiYFMmEwPSWw+qNVqD7PJ889JzHbw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.linq/4.3.0/system.linq.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Linq.Expressions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Linq": "4.3.0",
-        "System.ObjectModel": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Emit": "4.3.0",
-        "System.Reflection.Emit.ILGeneration": "4.3.0",
-        "System.Reflection.Emit.Lightweight": "4.3.0",
-        "System.Reflection.Extensions": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Reflection.TypeExtensions": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Threading": "4.3.0"
-      },
-      "file": "packages/system.linq.expressions.4.3.0.nupkg",
-      "size": 1928029,
-      "sha256": "fb7a6f85963bae2a7c1c26df7542f38e50bd14f645a58a10c6191cb859b6c24f",
-      "sha512": "61b90ef9ae6f779fbc8a7b6483ee8f5449cdd05c81b05235f70447e656a73b2aab7c341784b999f7532374744a72e2c3a5cd13800ea23417fac32ccfae5cde6d",
-      "nugetContentHash": "PGKkrd2khG4CnlyJwxwwaWWiSiWFNBGlgXvJpeO0xCXrZ89ODrQ6tjEWS/kOqZ8GwEOUATtKtzp1eRgmYNfclg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.linq.expressions/4.3.0/system.linq.expressions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Net.Http",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Diagnostics.DiagnosticSource": "4.3.0",
-        "System.Diagnostics.Tracing": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.Globalization.Extensions": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.IO.FileSystem": "4.3.0",
-        "System.Net.Primitives": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.OpenSsl": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Security.Cryptography.X509Certificates": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Threading.Tasks": "4.3.0",
-        "runtime.native.System": "4.3.0",
-        "runtime.native.System.Net.Http": "4.3.0",
-        "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/system.net.http.4.3.0.nupkg",
-      "size": 1371903,
-      "sha256": "528041ed63c3a760677bf7f0c4a1749c4f20ac9e85cd3317753fe37eca618fc4",
-      "sha512": "e8105ce8151aee95852fb29423f73cc1bd7c2286d36474ed7102a4b31248e45f434434a176d3af0442738398c96c5753965ee0444fb9c97525abbd9c88b13e41",
-      "nugetContentHash": "sYg+FtILtRQuYWSIAuNOELwVuVsxVyJGWQyOnlAzhV4xvhyFnON1bAzYYC+jjRW8JREM45R0R5Dgi8MTC5sEwA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.net.http/4.3.0/system.net.http.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Net.Primitives",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Handles": "4.3.0"
-      },
-      "file": "packages/system.net.primitives.4.3.0.nupkg",
-      "size": 769347,
-      "sha256": "318ed9eaf3ad14c6c429a2d6f6739265e023716a700ad74eeff5b59a41990731",
-      "sha512": "9f7fdece330a81f3312ea7c804927852413bee2c929f3066b736993803df47cc0692fbca236c222bf19dc8f59b42f54f2a4c00da9a4d624e458da5874d127ce6",
-      "nugetContentHash": "qOu+hDwFwoZPbzPvwut2qATe3ygjeQBDQj91xlsaqGFQUI5i4ZnZb8yyQuLGpDGivEPIt8EJkd1BVzVoP31FXA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.net.primitives/4.3.0/system.net.primitives.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Net.Sockets",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.Net.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.net.sockets.4.3.0.nupkg",
-      "size": 135695,
-      "sha256": "8a5eddaf9553fd058383fd1cba1fb812cdaef0b63fffeaaa898f416666314aeb",
-      "sha512": "e32ed9518e9630e99edcf1963c3d0e7047ea8252853c9260eb5403a4206170ae28fd27eb239f39da4d2db766f830b3ebdc9e4da2e697be20241d928082200955",
-      "nugetContentHash": "m6icV6TqQOAdgt5N/9I5KNpjom/5NFtkmGseEH+AK/hny8XrytLH3+b5M8zL/Ycg3fhIocFpUMyl/wpFnVRvdw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.net.sockets/4.3.0/system.net.sockets.4.3.0.nupkg"
-    },
-    {
-      "id": "System.ObjectModel",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading": "4.3.0"
-      },
-      "file": "packages/system.objectmodel.4.3.0.nupkg",
-      "size": 321655,
-      "sha256": "82d9919163f62b0af79c7b43874c98b5c7b7f33d70ac6cdbe9f8e6e2ff3037a4",
-      "sha512": "409bca3d2139bd1d003c711400ba2db5e576bb54d593aa541ec3576e7b2029b60159ab1c5b2c4e7389267b1b95ebcd8c2f064dc6e1f53e693aacb1737f066123",
-      "nugetContentHash": "bdX+80eKv9bN6K4N+d77OankKHGn6CH711a6fcOpMQu2Fckp/Ft4L/kW9WznHpyR0NRAvJutzOMHNNlBGvxQzQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.objectmodel/4.3.0/system.objectmodel.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.4.3.0.nupkg",
-      "size": 700821,
-      "sha256": "35049946964bbed3d60e5be6308746c5c56ec949f0f76654468d215ec12c8576",
-      "sha512": "2325b67ed60dce0302807064f25422cbe1b7fb275b539b44fba3c4a8ce4926f21d78529a5c34b31c03d80d110f7bace9af9589d457266beac014220057af8333",
-      "nugetContentHash": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection/4.3.0/system.reflection.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Emit",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.IO": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Emit.ILGeneration": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.emit.4.3.0.nupkg",
-      "size": 219534,
-      "sha256": "e4b8640e6872d85912c6e95747e6ec4ed333754dd5cb2b99cecc69eff0f0c885",
-      "sha512": "be45051467a36ab965410f112a475fb81510a5595347d1cc0c46b028e0436a339218dd3c073f048c2d338b67dc13b45742290b6c46f55982503f74a8f2698818",
-      "nugetContentHash": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit/4.3.0/system.reflection.emit.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Emit.ILGeneration",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.emit.ilgeneration.4.3.0.nupkg",
-      "size": 124567,
-      "sha256": "98a4649c41cd96ce20911c2b1208b7f41faf49a033fc6b772002ed4bdf313670",
-      "sha512": "e9be5f62bf64b1947a49857337306a5d0980686b58d665989e94006ab04aa7e0bbf4d8543d1b57d5bb38079052f275f339b73054a7357e4fa357208a0ac85d69",
-      "nugetContentHash": "59tBslAk9733NXLrUJrwNZEzbMAcu8k344OYo+wfSVygcgZ9lgBdGIzH/nrg3LYhXceynyvTc8t5/GD4Ri0/ng==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.ilgeneration/4.3.0/system.reflection.emit.ilgeneration.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Emit.Lightweight",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Emit.ILGeneration": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.emit.lightweight.4.3.0.nupkg",
-      "size": 84426,
-      "sha256": "acac786bdc9929c6a39684991ebe02293549e958e1f799e2fb3b333f15a38762",
-      "sha512": "ad58af07296bd084907a089f92026fa3898b764eb9d6a07c9414b550a83ac60456f32a34127c29bb93a9633fb07ba9fd828f7b41a31dce5ff019a7cf1ab29435",
-      "nugetContentHash": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.emit.lightweight/4.3.0/system.reflection.emit.lightweight.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Extensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Reflection": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.extensions.4.3.0.nupkg",
-      "size": 99740,
-      "sha256": "98c38263351e9e3778ad621fabbcc85fd3c5624fdd694c85d00f25d616f27409",
-      "sha512": "06cfd992c8d7fd9ab6432ab02be981a01b6558285a6e26a7825a064d4efcce08d9e7344f03fa19b033a2459d42b0b80e8c1400ce39b47a1752869ab8825b0475",
-      "nugetContentHash": "rJkrJD3kBI5B712aRu4DpSIiHRtr6QlfZSQsb0hYHrDCZORXCFjQfoipo2LaMUHoT9i1B7j7MnfaEKWDFmFQNQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.extensions/4.3.0/system.reflection.extensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Metadata",
-      "version": "1.6.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/system.reflection.metadata.1.6.0.nupkg",
-      "size": 852113,
-      "sha256": "2497e068f6afed47c4878c9101074684b645d5baebd2d5163e5eaa99f356abf1",
-      "sha512": "f5227666edc6bb1da78b8a8e86a68e9bd647caa2ec6a1580c14a4a5e1fe5cfde3bdaf0d8c23dc210c405a55f83ceb6add1a9adab149dc065b38cfddc9b01ba20",
-      "nugetContentHash": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.Primitives",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.primitives.4.3.0.nupkg",
-      "size": 281679,
-      "sha256": "e68830581e2f9504e5de38e4d718e7886da8cdb1488d94cbf6e834bac650b813",
-      "sha512": "d4b9cc905f5a5cab900206338e889068bf66c18ee863a29d68eff3cde2ccca734112a2a851f2e2e5388a21ec28005fa19317c64d9b23923b05d6344be2e49eaa",
-      "nugetContentHash": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.primitives/4.3.0/system.reflection.primitives.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Reflection.TypeExtensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Reflection": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.reflection.typeextensions.4.3.0.nupkg",
-      "size": 187842,
-      "sha256": "e14e3f5cd4009dd7604081c826adcfd93f3484dd283dd536b827a086c0d35a78",
-      "sha512": "68ae81a635b9af2aee9fc8fc8fe7da0356ef4da4eb32f81a89fb75613b96714e8f1a1f4c12bd0d335efbb03408cc7a744314837f13564d5fb262ca272055677f",
-      "nugetContentHash": "7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.typeextensions/4.3.0/system.reflection.typeextensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Resources.ResourceManager",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Globalization": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.resources.resourcemanager.4.3.0.nupkg",
-      "size": 85908,
-      "sha256": "89d88e0fddf16dbadbc304a70f898e440f51622fc3fd4e3c79152c9ff5a7586a",
-      "sha512": "9067db28f1c48d08fc52ad40a608f88c14ad9112646741ddaf426fdfe68bed61ab01954b179461e61d187371600c1e6e5c36c788993f5a105a64f5702a6b81d4",
-      "nugetContentHash": "/zrcPkkWdZmI4F92gL/TPumP98AVDu/Wxr3CSJGQQ+XN6wbRZcyfSKVoPo17ilb3iOr0cCRqJInGwNMolqhS8A==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.resources.resourcemanager/4.3.0/system.resources.resourcemanager.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0"
-      },
-      "file": "packages/system.runtime.4.3.0.nupkg",
-      "size": 7263712,
-      "sha256": "e75f35dd65e9048b2e03a7d4b44e57691423716750dbf966128909b7deeed118",
-      "sha512": "92ab2249f08073cfafdc4cfbd7db36d651ad871b8d8ba961006982187de374bf4a30af93f15f73b05af343f7a70cbd484b04d646570587636ae72171eb0714fb",
-      "nugetContentHash": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime/4.3.0/system.runtime.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime.Extensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.runtime.extensions.4.3.0.nupkg",
-      "size": 1060357,
-      "sha256": "c0b0c79a8cebf38bf55b6cd8096631c63d0547424360749545a46e0e6d1b77fa",
-      "sha512": "680a32b19c2bd5026f8687aa5382aea4f432b4f032f8bde299facb618c56d57369adef7f7cc8e60ad82ae3c12e5dd50772491363bf8044c778778628a6605bbc",
-      "nugetContentHash": "guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime.extensions/4.3.0/system.runtime.extensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime.Handles",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.runtime.handles.4.3.0.nupkg",
-      "size": 54854,
-      "sha256": "289e5a5e81a9079e98ebe89ea4191da71fc07da243022b71e2fae42ea47b826b",
-      "sha512": "0a5baf1dd554bf9e01bcb4ce082cb26ee82b783364feb47cba730faeecd70edc528efad0394dcce11f37d7f9507f8608f15629ebaf051906bfd3513e46af0f11",
-      "nugetContentHash": "OKiSUN7DmTWeYb3l51A7EYaeNMnvxwE249YtZz7yooT4gOZhmTjIn48KgSsw2k2lYdLgTKNJw/ZIfSElwDRVgg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime.handles/4.3.0/system.runtime.handles.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime.InteropServices",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Primitives": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Handles": "4.3.0"
-      },
-      "file": "packages/system.runtime.interopservices.4.3.0.nupkg",
-      "size": 2597020,
-      "sha256": "f2c0c7f965097c247eedee277e97ed8fffa5b2d122662c56501b9e476ce61e02",
-      "sha512": "650799c3e654efbb9ad67157c9c60ce46f288a81597be37ce2a0bf5d4835044065ef3f65b997328cbbbbfb81f4c89b8d7e7d61380880019deee6eb3f963f70d9",
-      "nugetContentHash": "uv1ynXqiMK8mp1GM3jDqPCFN66eJ5w5XNomaK2XD+TuCroNTLFGeZ+WCmBMcBDyTFKou3P6cR6J/QsaqDp7fGQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices/4.3.0/system.runtime.interopservices.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime.InteropServices.RuntimeInformation",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Reflection": "4.3.0",
-        "System.Reflection.Extensions": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Threading": "4.3.0",
-        "runtime.native.System": "4.3.0"
-      },
-      "file": "packages/system.runtime.interopservices.runtimeinformation.4.3.0.nupkg",
-      "size": 179546,
-      "sha256": "318a65ebf6720ba8639b359121efa20e895d38c5b599f6f05ec76e0275c82860",
-      "sha512": "6f4905329a3cc9e62d274c885f275ee31c5af57a6c9fd1a5080d039cb748e0277bef3dc8ce42863cac78365084e00a032279bf3d2b7254a49f3fb1566a29ad1b",
-      "nugetContentHash": "cbz4YJMqRDR7oLeMRbdYv7mYzc++17lNhScCX0goO2XpGWdvAt60CGN+FHdePUEHCe/Jy9jUlvNAiNdM+7jsOw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime.interopservices.runtimeinformation/4.3.0/system.runtime.interopservices.runtimeinformation.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Runtime.Numerics",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Globalization": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0"
-      },
-      "file": "packages/system.runtime.numerics.4.3.0.nupkg",
-      "size": 283763,
-      "sha256": "3f98c70a031b80531888e36fce668a15e3aa7002033eefd4f1b395acd3d82aa7",
-      "sha512": "3e347faa8e7ec484d481e53b1c219fe1ce346ae8278a214b4508cf0e233c1627bd9c6c6c7c654e8c1f4143271838ddd9593f63a1043577ad87c40e392af7fd34",
-      "nugetContentHash": "yMH+MfdzHjy17l2KESnPiF2dwq7T+xLnSJar7slyimAkUh/gTrS9/UQOtv7xarskJ2/XDSNvfLGOBQPjL7PaHQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.runtime.numerics/4.3.0/system.runtime.numerics.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.Algorithms",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Collections": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Runtime.Numerics": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "runtime.native.System.Security.Cryptography.Apple": "4.3.0",
-        "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.algorithms.4.3.0.nupkg",
-      "size": 402204,
-      "sha256": "b4026f35295ccd8049dc4776e007b6edae79b6afe7e03ddfb9b35077070a580f",
-      "sha512": "7641d70c2ba6f37bf429d5d949bda427f078098c2dcb8924fd79b23bb22c4b956ef14235422d8b1cc5720cbbcc6cfee8943d5ff87ce7abf0d54c5e8bce2aa5e2",
-      "nugetContentHash": "W1kd2Y8mYSCgc3ULTAZ0hOP2dSdG5YauTb1089T0/kRcN2MpSAW1izOFROrJgxSlMn3ArsgHXagigyi+ibhevg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.algorithms/4.3.0/system.security.cryptography.algorithms.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.Cng",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.cng.4.3.0.nupkg",
-      "size": 290620,
-      "sha256": "bb5eefcbac0d86aa24f754ab54b9e8d8cd44ccb1d99ba54c71af39c5b54286cc",
-      "sha512": "6272273414eaa777e78dca1b5ecbbdf65e9659908082aea924df0975e71f4c1b47f85617edf90ead57078c29513a160ca62f123be9f9f339dfb9c9386844f5ea",
-      "nugetContentHash": "03idZOqFlsKRL4W+LuCpJ6dBYDUWReug6lZjBa3uJWnk5sPCUXckocevTaUA8iT/MFSrY/2HXkOt753xQ/cf8g==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.cng/4.3.0/system.security.cryptography.cng.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.Csp",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.IO": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.csp.4.3.0.nupkg",
-      "size": 117553,
-      "sha256": "a1e7dd4d4fd9d8f594f6795ab7cba24431aafcf199a123d182430bd75a66bcf4",
-      "sha512": "43317591747a18f52f683187e09adfe0e03573e6dac430bf3ba13f440cdb1c7bb1f9205369d5f3b2a0f3fdf9604d5ba1e6d94a899a25d2c533e453338578f351",
-      "nugetContentHash": "X4s/FCkEUnRGnwR3aSfVIkldBmtURMhmexALNTwpjklzxWU7yjMk7GHLKOZTNkgnWnE0q7+BCf9N2LVRWxewaA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.csp/4.3.0/system.security.cryptography.csp.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.Encoding",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Collections": "4.3.0",
-        "System.Collections.Concurrent": "4.3.0",
-        "System.Linq": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.encoding.4.3.0.nupkg",
-      "size": 144382,
-      "sha256": "62e81ef3d37a33e35c6e572f5cc7b21d9ea46437f006fdcb3cc0e217c1e126cb",
-      "sha512": "5c26add23e63542f37506f5fa1f72e8980f03743d529cd8e583d1054b8d8a579fb773fa035a00d9073db84db6be4f47cac340d1ebc6d23dd761dbdbd600075e0",
-      "nugetContentHash": "1DEWjZZly9ae9C79vFwqaO5kaOlI5q+3/55ohmq/7dpDyDfc8lYe7YVxJUZ5MF/NtbkRjwFRo14yM4OEo9EmDw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.encoding/4.3.0/system.security.cryptography.encoding.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.OpenSsl",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Runtime.Numerics": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.openssl.4.3.0.nupkg",
-      "size": 71949,
-      "sha256": "0cbf83dac73626b422078a007148204c5c83f30dda2c48c97e877924f7be3b3e",
-      "sha512": "64530a19489730f873f8c68e6b245135ea260c02d68591880261768358d0145795132ba5ee877741822ff05dcd0c61edca27696ef99e8f9302a21cadf3b1329f",
-      "nugetContentHash": "h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.openssl/4.3.0/system.security.cryptography.openssl.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.Primitives",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.primitives.4.3.0.nupkg",
-      "size": 81382,
-      "sha256": "7e7162ec1dd29d58f96be05b8179db8e718dbd6ac2114e87a7fc23b235b3df5f",
-      "sha512": "5ad8273f998ebb9cca2f7bd03143d3f6d57b5d560657b26d6f4e78d038010fb30c379a23a27c08730f15c9b66f4ba565a06984ec246dfc79acf1a741b0dd4347",
-      "nugetContentHash": "7bDIyVFNL/xKeFHjhobUAQqSpJq9YTOpbEs6mR233Et01STBMXNAc/V+BM6dwYGc95gVh/Zf+iVXWzj3mE8DWg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.primitives/4.3.0/system.security.cryptography.primitives.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Security.Cryptography.X509Certificates",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.Globalization.Calendars": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.IO.FileSystem": "4.3.0",
-        "System.IO.FileSystem.Primitives": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.Handles": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Runtime.Numerics": "4.3.0",
-        "System.Security.Cryptography.Algorithms": "4.3.0",
-        "System.Security.Cryptography.Cng": "4.3.0",
-        "System.Security.Cryptography.Csp": "4.3.0",
-        "System.Security.Cryptography.Encoding": "4.3.0",
-        "System.Security.Cryptography.OpenSsl": "4.3.0",
-        "System.Security.Cryptography.Primitives": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading": "4.3.0",
-        "runtime.native.System": "4.3.0",
-        "runtime.native.System.Net.Http": "4.3.0",
-        "runtime.native.System.Security.Cryptography.OpenSsl": "4.3.0"
-      },
-      "file": "packages/system.security.cryptography.x509certificates.4.3.0.nupkg",
-      "size": 706727,
-      "sha256": "306dd5fe8c03876ef718250fb061ab68dc1a56973276ea65dc4b4f5e3e93546d",
-      "sha512": "318d86ab5528e2b444ec3e4b9824c1be82bb93db513eab34b238e486f886c4d74310ed82c2110401fe5cd790e4d97f4a023a0b2d5c2e29952d3fd02e42734d00",
-      "nugetContentHash": "t2Tmu6Y2NtJ2um0RtcuhP7ZdNNxXEgUm2JeoA/0NvlMjAhKCnM1NX07TDl3244mVp3QU6LPEhT3HTtH1uF7IYw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.security.cryptography.x509certificates/4.3.0/system.security.cryptography.x509certificates.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Text.Encoding",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.text.encoding.4.3.0.nupkg",
-      "size": 327281,
-      "sha256": "19cb475462d901afebaa404d86c0469ec89674acafe950ee6d8a4692e3a404b8",
-      "sha512": "6ff7feec7313a7121f795ec7d376e4b8728c17294219fafdfd4ea078f9df1455b4685f0b3962c3810098e95d68594a8392c0b799d36ec8284cd6fcbd4cfe2c67",
-      "nugetContentHash": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.text.encoding/4.3.0/system.text.encoding.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Text.Encoding.Extensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0",
-        "System.Text.Encoding": "4.3.0"
-      },
-      "file": "packages/system.text.encoding.extensions.4.3.0.nupkg",
-      "size": 244195,
-      "sha256": "bee7c75e0f1000ac4796e8cf1c772bb46c00a859ac083e872a37c30221f20187",
-      "sha512": "e648c5dc781e35cf00c5cc8e7e42e815b963cf8fb788e8a817f9b53e318b2b42e2f7a556e9c3c64bf2f6a2fd4615f26ab4f0d4eb713a0151e71e0af3fe9c3eed",
-      "nugetContentHash": "YVMK0Bt/A43RmwizJoZ22ei2nmrhobgeiYwFzC4YAN+nue8RF6djXDMog0UCn+brerQoYVyaS+ghy9P/MUVcmw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.text.encoding.extensions/4.3.0/system.text.encoding.extensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Text.RegularExpressions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.text.regularexpressions.4.3.0.nupkg",
-      "size": 530523,
-      "sha256": "54b0a4d43d6470ddb06c07b777461033f3ea0ac3c73aeaa5058d72776628f8ad",
-      "sha512": "80353c148df30d9a2c03ee10a624d91b64d7ccc3218cb966344cfa70657f0b59c867fed2ab94057f64ab281ad9318353f25c23375c00e1376b6589ae0a70aad3",
-      "nugetContentHash": "RpT2DA+L660cBt1FssIE9CAGpLFdFPuheB7pLpKpn6ZXNby7jDERe8Ua/Ne2xGiwLVG2JOqziiaVCGDon5sKFA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.text.regularexpressions/4.3.0/system.text.regularexpressions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Threading",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Runtime": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.threading.4.3.0.nupkg",
-      "size": 708088,
-      "sha256": "643437751e29cd5c266aa060e2169c65a55e9d0ff7c8017fb95ec15d95e38967",
-      "sha512": "97a2751bdce69faaf9c54f834a9fd5c60c7a786faa52f420769828dbc9b5804c1f3721ba1ea945ea1d844835d909810f9e782c9a44d0faaecccb230c4cd95a88",
-      "nugetContentHash": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.threading/4.3.0/system.threading.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Threading.Tasks",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.threading.tasks.4.3.0.nupkg",
-      "size": 840017,
-      "sha256": "679ad77c9d445e9dc6df620a646899ea4a0c8d1bb49fc0b5346af0a5d21e9f8c",
-      "sha512": "7d488ff82cb20a3b3cef6380f2dae5ea9f7baa66bf75ad711aade1e3301b25993ccf2694e33c847ea5b9bdb90ff34c46fcd8a6ba7d6f95605ba0c124ed7c5d13",
-      "nugetContentHash": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks/4.3.0/system.threading.tasks.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Threading.Tasks.Extensions",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Threading.Tasks": "4.3.0"
-      },
-      "file": "packages/system.threading.tasks.extensions.4.3.0.nupkg",
-      "size": 52499,
-      "sha256": "5f6850e63f9fc5c9a79bcf0b7bf9126af8e218e9a472e98119364a04bbe8acf7",
-      "sha512": "2c33900ff7f544d6db31ad11b6baee1c9ecb40d5a54f51e5dd5bbbb37f4c50ee35ed481615cbf7c1da61a31ae3333c4454bfbeee4ae32241789e72ce3f910db6",
-      "nugetContentHash": "npvJkVKl5rKXrtl1Kkm6OhOUaYGEiF9wFbppFRWSMoApKzt2PiPHT2Bb8a5sAWxprvdOAtvaARS9QYMznEUtug==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.threading.tasks.extensions/4.3.0/system.threading.tasks.extensions.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Threading.Timer",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "Microsoft.NETCore.Platforms": "1.1.0",
-        "Microsoft.NETCore.Targets": "1.1.0",
-        "System.Runtime": "4.3.0"
-      },
-      "file": "packages/system.threading.timer.4.3.0.nupkg",
-      "size": 77054,
-      "sha256": "a6686c96685084fdf64d66c1ce82132d9e01a0e441a98936e4e59baeed38a7db",
-      "sha512": "d5ce8e258b7be7be268f944e21621195948106f57e6c46e69b2887c46f567760368b14e84046b4be4466ecd08ecd4cb04016a2ff7948cb4640960befc7aa1739",
-      "nugetContentHash": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.threading.timer/4.3.0/system.threading.timer.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Xml.ReaderWriter",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.IO.FileSystem": "4.3.0",
-        "System.IO.FileSystem.Primitives": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Runtime.InteropServices": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Text.Encoding.Extensions": "4.3.0",
-        "System.Text.RegularExpressions": "4.3.0",
-        "System.Threading.Tasks": "4.3.0",
-        "System.Threading.Tasks.Extensions": "4.3.0"
-      },
-      "file": "packages/system.xml.readerwriter.4.3.0.nupkg",
-      "size": 1388897,
-      "sha256": "410f0a814d25bb817952787e4db79c84efffcda00667831f82f5bbd829f58730",
-      "sha512": "991101497fbd39e43fc306ca280a465318868afa8db1f34bb87c266fe61f0c81a0ec34a797b236ee823bd60d1149b7592def96fe044abb511858efffe890c2e6",
-      "nugetContentHash": "GrprA+Z0RUXaR4N7/eW71j1rgMnEnEVlgii49GZyAjTH7uliMnrOU3HNFBr6fEDBCJCIdlVNq9hHbaDR621XBA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg"
-    },
-    {
-      "id": "System.Xml.XDocument",
-      "version": "4.3.0",
-      "type": "Transitive",
-      "dependencies": {
-        "System.Collections": "4.3.0",
-        "System.Diagnostics.Debug": "4.3.0",
-        "System.Diagnostics.Tools": "4.3.0",
-        "System.Globalization": "4.3.0",
-        "System.IO": "4.3.0",
-        "System.Reflection": "4.3.0",
-        "System.Resources.ResourceManager": "4.3.0",
-        "System.Runtime": "4.3.0",
-        "System.Runtime.Extensions": "4.3.0",
-        "System.Text.Encoding": "4.3.0",
-        "System.Threading": "4.3.0",
-        "System.Xml.ReaderWriter": "4.3.0"
-      },
-      "file": "packages/system.xml.xdocument.4.3.0.nupkg",
-      "size": 591350,
-      "sha256": "ad6b5d72672e12534e4b309e85f9722b01e40d1a623a1249b3c09e4349750822",
-      "sha512": "c2d9236a696daf23a29b530b9aa510fb813041685a1bb9a95845a51e61d870a0615e988b150f5be0d0896ef94b123e97f96c8a43ee815cf5b9897593986b1113",
-      "nugetContentHash": "5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg"
+      "id": "microsoft.aspnetcore.app.runtime.win-x64",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.app.runtime.win-x64.8.0.24.nupkg",
+      "size": 12201988,
+      "sha256": "706cd603ae193e8912bb8e580f934722dbd10befd7b2012550fb7073ed4adb1e",
+      "sha512": "c218e3ab6b21a62afdd10fb0c0e88288bfa6e4d39a84f1c3b3e6b45e19acb27578e6ea5c4e602e3dc72f7cee064d5f8bcd967cbf1fba03b87b2001fa90906a66",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.app.runtime.win-x64/8.0.24/microsoft.aspnetcore.app.runtime.win-x64.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.authorization",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.authorization.8.0.24.nupkg",
+      "size": 142579,
+      "sha256": "a3ead5d6bcc13e81bf705d42068c73071919fac55bf6328a843912d23e8d5c43",
+      "sha512": "a82d32877a94f9a6e576d646d92ecf2ec830a585066a1c06ca1878b535eabd16422a921b98e1a5ede7bf65341e09effba6bb23b7e4d2e1f3f7bcf50eb360bb9f",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authorization/8.0.24/microsoft.aspnetcore.authorization.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.8.0.24.nupkg",
+      "size": 217403,
+      "sha256": "93c78a0cb94b90f173dde74404dec12325f2df2a9b02deebf78b46fe7d6ba1c7",
+      "sha512": "762b4f0aab37b08e787a1d61e1ec391d0673f328c23912a31d72e841fa5bf3b7c99fa77c1fb55e7cbcc1d262d37a5452ad825de12fb6db3d051b0ba28276751c",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components/8.0.24/microsoft.aspnetcore.components.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.analyzers",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.analyzers.8.0.24.nupkg",
+      "size": 66209,
+      "sha256": "85782648a037bb0fd731393fb74643bca796bd56053b7fa36e1e2a8526a8bd1d",
+      "sha512": "1b18ae9bc927cb574ca1dfa6e607dd359247e442eda9edd4a7fbe95686470c89a7f4c59904ab7ce746dee56876884bced304c22ca8ad9b7a684107aaca828564",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.analyzers/8.0.24/microsoft.aspnetcore.components.analyzers.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.forms",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.forms.8.0.24.nupkg",
+      "size": 68049,
+      "sha256": "f4013a15441931a19a3677a75f4dcfce6c52a92c05883383b9424040ab79ba12",
+      "sha512": "87805b0c0f6a1fdb10bc735b4ca00093854f78fe041b4634d2f4e7456fbd48fbc7d70f7f966b151fde4ea83cce37b2cb9dcefbef9ce71250d0d2e4670fd48a4c",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.forms/8.0.24/microsoft.aspnetcore.components.forms.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.web",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.web.8.0.24.nupkg",
+      "size": 132592,
+      "sha256": "65f52b61cf9b93b00fd79f6ff6fc4c9687bb698d29304dae77e9810f98311257",
+      "sha512": "8ae1a34b7d892e03baf154a275438e11772bb188fca5f95aba6f8d38f6a32d85d7ea544d9361d5f2186c105f87ee7afe6bca6377685f3f6dc9de030bdbb2f890",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.web/8.0.24/microsoft.aspnetcore.components.web.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.webassembly",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.webassembly.8.0.24.nupkg",
+      "size": 121123,
+      "sha256": "b07b7a8af38e6dcf376df73efb3d41e380c7d491a415eef2efb55871359c84b2",
+      "sha512": "d050508ee84c48f456be76d474f8929752f196cdb8b51a20d2badb1f31f704e265ec3b019232cdafa99528d585a7403191bb1a3c7a382ef6cc3992598c35f14b",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly/8.0.24/microsoft.aspnetcore.components.webassembly.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.webassembly.devserver",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.webassembly.devserver.8.0.24.nupkg",
+      "size": 8513893,
+      "sha256": "87b451468fcca259cd08f8d0fc56e6b34127d1f14a0938a37fb86a4ee96428bc",
+      "sha512": "f501f89cf01b803c79a5de812a7fd35056f8218180850a82307f8a6377a41283faad4248eedbde4a966231dc0d139d3f43141c196824dd87a0e9e867d22375b6",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly.devserver/8.0.24/microsoft.aspnetcore.components.webassembly.devserver.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.components.webassembly.server",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.components.webassembly.server.8.0.24.nupkg",
+      "size": 4108698,
+      "sha256": "1fbd0fae249f7134dcefad117f28f6a0d528ece03aa0e51987aa357faee0a526",
+      "sha512": "fa2f9c2d57ea42716a642464df9223659720b9820c3dcde6ce36cad58c763d12b53e112b979184bc132bee2cf6548b4c2b7d9c23b00b9472e653fd47ecfaa412",
+      "projects": [
+        "Server",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.components.webassembly.server/8.0.24/microsoft.aspnetcore.components.webassembly.server.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.connections.abstractions",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.connections.abstractions.8.0.24.nupkg",
+      "size": 158117,
+      "sha256": "bd6d355419bae78ed64ce973800ee7313660399d4b226ea716e7765398326c24",
+      "sha512": "8a8b8d83c14f52d42d91329a11556164d671c7e2bf5244b916e3bbbd40181898447a51e933a1df662db0660e31aaf3f2c5accd1124dfc90d2423c4728e4fcaf7",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.connections.abstractions/8.0.24/microsoft.aspnetcore.connections.abstractions.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.http.connections.client",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.http.connections.client.8.0.24.nupkg",
+      "size": 265403,
+      "sha256": "3cf7a37d9ed512eecf5cea16ae598492f3833492c71522a458b8c22ae72ee964",
+      "sha512": "38571691ca358be123fe5462a3812a649a7f3574e22d89326a1ff1e8a4aa0eb5efe36a29462a483cb08b71fe7d50b56f69d509d75d8c22c043d58b2a59c75e3e",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections.client/8.0.24/microsoft.aspnetcore.http.connections.client.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.http.connections.common",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.http.connections.common.8.0.24.nupkg",
+      "size": 98162,
+      "sha256": "90983f90c8c8f7bf0ff5e3df32332fbd8ce285b85bc488b7fcae67bbe64c7d04",
+      "sha512": "11483a180c99d4d86661964f27490ec28cfd2651251c2041fadfe163918a7d62110febb3fe2b550e5197062499b52728697cad3a97ee2990a9a65ac4bd809023",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.connections.common/8.0.24/microsoft.aspnetcore.http.connections.common.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.metadata",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.metadata.8.0.24.nupkg",
+      "size": 77331,
+      "sha256": "6d4d1832f9f5a80170c6dffb98b050461563a881e35a87f22742bba754d3181e",
+      "sha512": "0c53d48abaa0905252536c498f2d1fe5643179fbc90e79a212d71f201914ab2ea9a1e58ec093d52d19ed12d312cb52d32afd0e1b3ace38d554105f6e81319ee4",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.metadata/8.0.24/microsoft.aspnetcore.metadata.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.signalr.client",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.signalr.client.8.0.24.nupkg",
+      "size": 86919,
+      "sha256": "a26bc435bd1947dbe994c89430c1cb014cb89059717cc1f18c51a40b867a37a4",
+      "sha512": "4d453d5c7947e8ef82d33e1f1e74229a67f7e98911b913901bcdb5b10917638823eae9d32c1d4710525a6857a61d085fa12a8e7cd78d82c9aee9d7948a08ad12",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.client/8.0.24/microsoft.aspnetcore.signalr.client.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.signalr.client.core",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.signalr.client.core.8.0.24.nupkg",
+      "size": 382920,
+      "sha256": "abb8f3cd4570cac391ab6699387f1986052bc08c9589988c92c90645b5334471",
+      "sha512": "2132433b4da93282191ad85b6d5b9f54bf856eae91d263fa1f48d5daf2dde6ac9e751a7f0c8858055490f29f0a626bbf92c3e816030e06b644bb9e01f6e4af46",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.client.core/8.0.24/microsoft.aspnetcore.signalr.client.core.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.signalr.common",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.signalr.common.8.0.24.nupkg",
+      "size": 128123,
+      "sha256": "4815e183315776a9dea643af1e4ab27752c57a44f2897879f79f60ab5efc8c41",
+      "sha512": "9c6e424b1d5af7b9c5b0f20bde2da8f50a488bc95d4cb8baed2e86e847593acd7ac8c048b4a41bc0f32498d7580e781e1e12ca033a490157b1faf6aa86f06635",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.common/8.0.24/microsoft.aspnetcore.signalr.common.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.aspnetcore.signalr.protocols.json",
+      "version": "8.0.24",
+      "file": "packages/microsoft.aspnetcore.signalr.protocols.json.8.0.24.nupkg",
+      "size": 109924,
+      "sha256": "eb0c8bf1a845623a179e4a8e596638a33b0ad7676406994d9664834a817b0ce0",
+      "sha512": "fee4c7ed0eff3b6fdeae89b930bbfc721b122fa207136b929e5eebee89f3d217877b7df91cb9033f7aa637a024ce549213aa3d5d17c4dc5a80c8c1cf249194ce",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.signalr.protocols.json/8.0.24/microsoft.aspnetcore.signalr.protocols.json.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.codecoverage",
+      "version": "17.14.1",
+      "file": "packages/microsoft.codecoverage.17.14.1.nupkg",
+      "size": 9755080,
+      "sha256": "7fc432b46f06bd1a0fe3baced8a1269c32f1229c9eb1aab6e931630dd5b8d06b",
+      "sha512": "27f6599442877e00cc65252d0dbb1a71ca0b0b5aeb113be8b5030c7f89fa4db7cbc72b5d6133f775b2b1684e71d83f9b5eec2811265e4a0c9ddb8028de9ae166",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.codecoverage/17.14.1/microsoft.codecoverage.17.14.1.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.configuration",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.configuration.8.0.0.nupkg",
+      "size": 191129,
+      "sha256": "f413ec012971ad5f229663028dd6f74e251c9b9bc56719019c023f7cd0521320",
+      "sha512": "da48a8ef3b4cd2a6beb78008382d9fccdcdd42ff3a71d9efc5ac69d4020421294ac95b07cf11520341a69ee241925cd040d49a382df243e2fa194f6896ef9734",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.configuration.abstractions",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.configuration.abstractions.8.0.0.nupkg",
+      "size": 149230,
+      "sha256": "e1e0690e47fb309a334d99cec10bf071f81129019c3577b42bf905fa1e5197ca",
+      "sha512": "3316170910a94290c8df4fed26fa884a47dd9bf974eb7ad22368d5a63308660a01d2dab4a44662061dacaeccf4ba09cdabfccd4636f76ab3178becec5ad31a2f",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.configuration.binder",
+      "version": "8.0.2",
+      "file": "packages/microsoft.extensions.configuration.binder.8.0.2.nupkg",
+      "size": 389312,
+      "sha256": "68607456ea02df861a74012aaf0a1a5cb739aa56b9e69b300d5db12d2991ed21",
+      "sha512": "63f5d5d0f5df1c7f90a138c75e14d81f3598af78c2c736a7aef5035ffcf9d40ac5a133571935a08290ceb92db72357c8203261165f8f7f057c450b2c611f6c2a",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.binder/8.0.2/microsoft.extensions.configuration.binder.8.0.2.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.configuration.fileextensions",
+      "version": "8.0.1",
+      "file": "packages/microsoft.extensions.configuration.fileextensions.8.0.1.nupkg",
+      "size": 144571,
+      "sha256": "89103c2fb057fdf7b92c70953a1cc14a4df419fb213fb576423da7c6912f4ad0",
+      "sha512": "a9727a08418460a2c66da8ed447cd9ca199157e43e22b84fb0d642cfc4b7b74cb577c3bbd7217b6abc3742fcba7b8e35f873a1a289ee4315c09ce5f1b94ee9a6",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.fileextensions/8.0.1/microsoft.extensions.configuration.fileextensions.8.0.1.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.configuration.json",
+      "version": "8.0.1",
+      "file": "packages/microsoft.extensions.configuration.json.8.0.1.nupkg",
+      "size": 160472,
+      "sha256": "27c10aff286c7d3a5e49463c17cd594c157d00f1e23d496237b77e9f6397f488",
+      "sha512": "b61e38d1accfadeae40c670f9414eb360987db39024d0619986733334a63a88aed9727ed8fbccd2fb906f1e37f3b3df8baf01c1cb819b72f452c559f02cab37c",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.configuration.json/8.0.1/microsoft.extensions.configuration.json.8.0.1.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.dependencyinjection",
+      "version": "8.0.1",
+      "file": "packages/microsoft.extensions.dependencyinjection.8.0.1.nupkg",
+      "size": 344439,
+      "sha256": "3bd8348d64be8df1a84f7caa2b06582462fe8c64887926f09afa262830b78535",
+      "sha512": "b6d2c496ce68bf91ac7499eb2a8aae34347e648b9be853e535a36044afcf8173561650aba33068346f458062f29c8e0c1f5859f73800d512ec0f464dd467d00f",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection/8.0.1/microsoft.extensions.dependencyinjection.8.0.1.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.dependencyinjection.abstractions",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg",
+      "size": 276886,
+      "sha256": "ef92b31065a36d110b7332690a226e6fe96d35430c6f3e40ff529053ee5d80ff",
+      "sha512": "94bc05ed29755109565d9cdfc901087ee1fa08302dda393106bc9a0bd7384f0dc2b6c2f123c1bd53fce06babdbfa845dc6d22a163c4b0646c5251dcc5aeac282",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.dependencyinjection.abstractions",
+      "version": "8.0.2",
+      "file": "packages/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg",
+      "size": 278862,
+      "sha256": "51f2df1100245f10da54f0bb7e813f277155117777d4fbbab902214e27372606",
+      "sha512": "ba1960ef110ac7387a2a06eefc02c59ce57b0fe58b3e0cccb79b1c8f2150105c5d1f4b65e0ed95ff50d70f28142917c6a735b83f4e5406bb1d8f9dd1f9635d7d",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.features",
+      "version": "8.0.24",
+      "file": "packages/microsoft.extensions.features.8.0.24.nupkg",
+      "size": 96376,
+      "sha256": "7ade1f1446542768790be0fff2cfad6bf9de9110bface4b10c3f493bd6eaf2aa",
+      "sha512": "b5865a7ce86ee2725cafdba77fa198453ba9f507757262a2c566e77f7e2d2d8a4dff862e3fb23f62e8fd6fb41d00eef6fd858b401e7580c91f16cbfe68c0314c",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.features/8.0.24/microsoft.extensions.features.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.fileproviders.abstractions",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg",
+      "size": 113833,
+      "sha256": "b904979ade3b5f61c6a159e26af8cb2026cfb43d9179039840c832de5d31b8c5",
+      "sha512": "fe9aa18f2e819694f20e322c93e075e27bee2d57ddd5380624fc48a95669c526c270ab5c74f58c6a4721d18ecdb5b2febf0315f8794585ae65617831459e2a0b",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.abstractions/8.0.0/microsoft.extensions.fileproviders.abstractions.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.fileproviders.physical",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.fileproviders.physical.8.0.0.nupkg",
+      "size": 199058,
+      "sha256": "dbdcb9651435660cd53b11e4b58c72887e34915826e6e9f6c9319dbee4969d17",
+      "sha512": "7612261a35b76d0b3a337ab262de57c3b605e8a1e55bf4d47f15e374e5577ab2ce4ae370980ef2c1335c4e323e6adcfe3718eee86570ac6e4ff5cb100450331f",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.fileproviders.physical/8.0.0/microsoft.extensions.fileproviders.physical.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.filesystemglobbing",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.filesystemglobbing.8.0.0.nupkg",
+      "size": 192314,
+      "sha256": "f8ecf8d494798dd70994224e4a94082f938c04d8bed479767742541df112eec5",
+      "sha512": "23a5e50cf695ba18c7a77f7c050e40d6fb065957480db17f5e75e5cf269c8f50763c996c28d0dcfca09e2c1248540898ab53c474cadc705548f5fe491dd263fd",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.filesystemglobbing/8.0.0/microsoft.extensions.filesystemglobbing.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.logging",
+      "version": "8.0.1",
+      "file": "packages/microsoft.extensions.logging.8.0.1.nupkg",
+      "size": 233885,
+      "sha256": "be47d5c38b50120f3a5e0d7cbfa40ed106f862ccf4363c79eddd5770dba3e885",
+      "sha512": "ab3363c4e103963ee5013ada55fddcd771961e48e5124f41e70589e589dacf27d20cff7e04bfc214db79fd937cbad80e99cef565f72e0cc10b84d9b3ac0619fd",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging/8.0.1/microsoft.extensions.logging.8.0.1.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.logging.abstractions",
+      "version": "8.0.2",
+      "file": "packages/microsoft.extensions.logging.abstractions.8.0.2.nupkg",
+      "size": 801164,
+      "sha256": "707a5ef17d818186b90f3ba565fab6e2b83c3b62b92e6ab63a22e1a320158097",
+      "sha512": "f8b9df3fa7b837cb5f2fa53a86bfd47279f81bc332db55b8bb7ea14f55dfe2158f351d35199c0cc0e01c735f394ded2a3a8f1c85c3ff6ea1c3ab785bfbf362fd",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.logging.abstractions",
+      "version": "8.0.3",
+      "file": "packages/microsoft.extensions.logging.abstractions.8.0.3.nupkg",
+      "size": 802188,
+      "sha256": "e4c498d5a13051b4577a148f1d8c3470167215c507e2392069b75dc61322bb74",
+      "sha512": "e689ec1e2cb9d2fafa9fd9f6ab861a0895aa9a1cbc9fb37e9dd856c8d1709004eb1455e64570b51013be88b60e9ae0c44f8f853932d9cdeab33ddb42fcec199b",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.logging.abstractions/8.0.3/microsoft.extensions.logging.abstractions.8.0.3.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.options",
+      "version": "8.0.2",
+      "file": "packages/microsoft.extensions.options.8.0.2.nupkg",
+      "size": 494417,
+      "sha256": "02372575d75d76d37ff5a1fda60ec2944672716b451cb8bd20f7b518684d432b",
+      "sha512": "cc0c10336580c9519740a042b1e42d391bcb32b63732163ae1161e1c5b55a4cd4a736e1902eb2a4dbb89d784b0acf584b5042b4f3481a61dd30a4e229fb523c5",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.options/8.0.2/microsoft.extensions.options.8.0.2.nupkg"
+    },
+    {
+      "id": "microsoft.extensions.primitives",
+      "version": "8.0.0",
+      "file": "packages/microsoft.extensions.primitives.8.0.0.nupkg",
+      "size": 209772,
+      "sha256": "154f2a8f70d1f1b0dd73573e59e199c7f3c265eaaa9ddc1e64cf5ea5ca578d2a",
+      "sha512": "1f5475ca3d3ce18463456dd135afac502d6f82fea6e4e4814a61f86616c348decf28b73d15c2bb276d1a3c039ea6064f75e1329f6f3a64caa3520d70ab92c32d",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg"
+    },
+    {
+      "id": "microsoft.jsinterop",
+      "version": "8.0.24",
+      "file": "packages/microsoft.jsinterop.8.0.24.nupkg",
+      "size": 80768,
+      "sha256": "9d9115767b1bfbbde857b4ee60411658daaabd0eb9478ad5b196e4a6d3bf18b1",
+      "sha512": "e4a4cafafe5ce029974af74350adb15aed372945f41e808a12db9f5be595696ac8332685a3f88f5272674c60bba99de830651606775bc8cab0aa3681ae7aab82",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.jsinterop/8.0.24/microsoft.jsinterop.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.jsinterop.webassembly",
+      "version": "8.0.24",
+      "file": "packages/microsoft.jsinterop.webassembly.8.0.24.nupkg",
+      "size": 56151,
+      "sha256": "d9dd93f91f6597a5249c8e9df197620d9503b2ed2800793f3b090fb849b80119",
+      "sha512": "6c74ba0ce297133eef7a5aa85208de725769dac024b6591bc797bea7a3d672caa39608973dac936b69acc484730647364180387e19d7a359bdf429a5ae982f1f",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.jsinterop.webassembly/8.0.24/microsoft.jsinterop.webassembly.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.net.illink.tasks",
+      "version": "8.0.24",
+      "file": "packages/microsoft.net.illink.tasks.8.0.24.nupkg",
+      "size": 1446411,
+      "sha256": "d00a80989bd8980adef2d494e3d37967d10cbe993c269f2d2c1c48e74a9864a7",
+      "sha512": "e5d8213656a1b53bafc6c2bed19107bae7e3138a7f3ab5441db1a468d2d9ecc5bc1bb02780c3d66465971ac0b7060decdb3b067618fa564cd01d9f2e4b84bac8",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.net.illink.tasks/8.0.24/microsoft.net.illink.tasks.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.net.sdk.webassembly.pack",
+      "version": "8.0.24",
+      "file": "packages/microsoft.net.sdk.webassembly.pack.8.0.24.nupkg",
+      "size": 4261965,
+      "sha256": "cc71c3a998c5c60e1ea47082b6ffe05cabe78404813cf14e0075a0b069db8b5a",
+      "sha512": "53e7264c411d386d680ab1d925f2648eef01bff412f945ca5e1b946aa04a04e532614e0d9045802ce438247b19e84a06bac9ec995da889a11349a16f701745e4",
+      "projects": [
+        "Client"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.net.sdk.webassembly.pack/8.0.24/microsoft.net.sdk.webassembly.pack.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.net.test.sdk",
+      "version": "17.14.1",
+      "file": "packages/microsoft.net.test.sdk.17.14.1.nupkg",
+      "size": 39629,
+      "sha256": "9995330c5bc5a7bc759caadc9d17748616cdbb983c11062df122a74607614ff0",
+      "sha512": "4ad1aafd75f13d10d54ee1e892a835403356368fcd087045fbb10041622dd6b7af95879333fcdd4c4a75f772f54aab5dd3021486e4ffec0888cc9290dc7371b3",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.net.test.sdk/17.14.1/microsoft.net.test.sdk.17.14.1.nupkg"
+    },
+    {
+      "id": "microsoft.netcore.app.runtime.mono.browser-wasm",
+      "version": "8.0.24",
+      "file": "packages/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.24.nupkg",
+      "size": 21990070,
+      "sha256": "748c88ec2c43fedcb19970a9d3a679cd782edbaa48740af6776460f895b5fca8",
+      "sha512": "b5f91c16f4bdc6277b5bd7d79517621cb597bd34f46ec6ffe90d856fdef70599c53e34e6d8ffba8019c1dbd74faef4d5557c2c6e7d2d3a30a68425c7c0409733",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.mono.browser-wasm/8.0.24/microsoft.netcore.app.runtime.mono.browser-wasm.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.netcore.app.runtime.win-x64",
+      "version": "8.0.24",
+      "file": "packages/microsoft.netcore.app.runtime.win-x64.8.0.24.nupkg",
+      "size": 36178509,
+      "sha256": "66650628d9ebe5f3893097870bee3c8b4087212c078eadb8aecc5ba62ca815c3",
+      "sha512": "7aed17ee237f53bacb373e106e185808736db0914c2c21188e3daf1dc69baefaf32860b3569c8c3e51ef59f01819195a5f01df3c0f659c6f3ac49d2464c8a753",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.netcore.app.runtime.win-x64/8.0.24/microsoft.netcore.app.runtime.win-x64.8.0.24.nupkg"
+    },
+    {
+      "id": "microsoft.testplatform.objectmodel",
+      "version": "17.14.1",
+      "file": "packages/microsoft.testplatform.objectmodel.17.14.1.nupkg",
+      "size": 1657190,
+      "sha256": "40c7fa3bec34213fb5e8caf3a3bc27f8ddb47f72f5fe60e1b3faa3984a35ad8b",
+      "sha512": "fa38a8cef2083a790ede99d97f8408bacc286416e3f1ee3e453c75d4a91f0dbae19c52d8c127ee5e4234a7fef140804fe9759f66f12c99f08faf3cbdcc8a3edd",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.objectmodel/17.14.1/microsoft.testplatform.objectmodel.17.14.1.nupkg"
+    },
+    {
+      "id": "microsoft.testplatform.testhost",
+      "version": "17.14.1",
+      "file": "packages/microsoft.testplatform.testhost.17.14.1.nupkg",
+      "size": 3167820,
+      "sha256": "d5cc4759cbc7443ee8ad0dc41043cfc55184913a71a26d7fce82020bd4889c9b",
+      "sha512": "fd5dc072efe5aa760322715c69d4b983ed4f775f5077ec6b750a90e2dd3c8b87ae3fda961fa5c6a32cfa62575305ae8451fd9bffc700a03f1c2e3ce808601304",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.testplatform.testhost/17.14.1/microsoft.testplatform.testhost.17.14.1.nupkg"
+    },
+    {
+      "id": "microsoft.windowsdesktop.app.runtime.win-x64",
+      "version": "8.0.24",
+      "file": "packages/microsoft.windowsdesktop.app.runtime.win-x64.8.0.24.nupkg",
+      "size": 36856894,
+      "sha256": "0918147f69afe38c74f51874c8eb0f11d72e05671cd736ee4598d30a5555ecb5",
+      "sha512": "d8f817758dd6d8e27314ad895337bb9ea01cbf482cb542949ecce13e8e428c48356fd6524f028d9c883ffa0a64d0ca96b4d5b0b17a4e7566d9ba881354897a60",
+      "projects": [],
+      "kind": "SDK/runtime download",
+      "source": "https://api.nuget.org/v3-flatcontainer/microsoft.windowsdesktop.app.runtime.win-x64/8.0.24/microsoft.windowsdesktop.app.runtime.win-x64.8.0.24.nupkg"
+    },
+    {
+      "id": "newtonsoft.json",
+      "version": "13.0.3",
+      "file": "packages/newtonsoft.json.13.0.3.nupkg",
+      "size": 2441966,
+      "sha256": "872fc189e638ab1056555b03aaa38f68bcb54286e221aa646eb1129babf63c77",
+      "sha512": "99b252bc77d1c5f5f7b51fd4ea7d5653e9961d7b3061cf9207f8643a9c7cc9965eebc84d6467f2989bb4723b1a244915cc232a78f894e8b748ca882a7c89fb92",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg"
+    },
+    {
+      "id": "system.collections.immutable",
+      "version": "8.0.0",
+      "file": "packages/system.collections.immutable.8.0.0.nupkg",
+      "size": 787241,
+      "sha256": "17b3958ca370a6a6d487c95389d6ea256622e3bea7b2af67fba934f90551a37c",
+      "sha512": "057a9591c22b8629afbde9baab60a15a4b96e976188abbdbe85961beec1a32806a05da5caf89de84904a3fae53c38d14a9c50cea80e8383b1e70cd328d9e8053",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/system.collections.immutable/8.0.0/system.collections.immutable.8.0.0.nupkg"
+    },
+    {
+      "id": "system.io.pipelines",
+      "version": "8.0.0",
+      "file": "packages/system.io.pipelines.8.0.0.nupkg",
+      "size": 267394,
+      "sha256": "2dda41d6ce2f433b0e3836b188ab2d2e4b39ed7f434c3e43e9c3f1f03135c301",
+      "sha512": "57eb6a11e84f40a48b57b1dc5786a01aa9852122b7d15363490d8a12c9a458bf99a8ddf4c0c0247be98559c2b42e769a10bda2c5a9817735484d960dc652eb12",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg"
+    },
+    {
+      "id": "system.reflection.metadata",
+      "version": "8.0.0",
+      "file": "packages/system.reflection.metadata.8.0.0.nupkg",
+      "size": 1307788,
+      "sha256": "750182df425ab880d63565ccad234e2677156b5ba6475b228dacd8c140dd4881",
+      "sha512": "fbab0c76426379ed01ea79b702504197b710688d283e788bbef92b90586610dddfa3f84638d685770a4068ef8645395b65ee24459cc5c14ee4497416d11c89c6",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/system.reflection.metadata/8.0.0/system.reflection.metadata.8.0.0.nupkg"
+    },
+    {
+      "id": "system.threading.channels",
+      "version": "8.0.0",
+      "file": "packages/system.threading.channels.8.0.0.nupkg",
+      "size": 245743,
+      "sha256": "7394d8a0b3570cbae82c83e795fc8c1e4ee767bd1001c91cfdced5d7df580a18",
+      "sha512": "335b37eb97f594e73ab36e7ce7f0135be291445167688e89bd249d135e27f592a0bd69d91e8246a1c72a578d57bed443ac7302311365c16160b7dc974eedf141",
+      "projects": [
+        "Client",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/system.threading.channels/8.0.0/system.threading.channels.8.0.0.nupkg"
     },
     {
       "id": "xunit",
-      "version": "2.5.3",
-      "type": "Direct",
-      "dependencies": {
-        "xunit.analyzers": "1.4.0",
-        "xunit.assert": "2.5.3",
-        "xunit.core": "[2.5.3]"
-      },
-      "file": "packages/xunit.2.5.3.nupkg",
-      "size": 29100,
-      "sha256": "5f84e437dcbfe7bd8b9ea397f9f897e9daaca8a7bf1db01666ae8f85d0f4a863",
-      "sha512": "05252bb1638f5303a8d587d4a35d7b53ad1247a1fc10984078c75376b52480b77dbb7c105ec8fc0351f666055922d6ee7d5e7c47065aebd7f264580fc6cecdf4",
-      "nugetContentHash": "VxYDiWSwrLxOJ3UEN+ZPrBybB0SFShQ1E6PjT65VdoKCJhorgerFznThjSwawRH/WAip73YnucDVsE8WRj/8KQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit/2.5.3/xunit.2.5.3.nupkg"
+      "version": "2.9.3",
+      "file": "packages/xunit.2.9.3.nupkg",
+      "size": 31659,
+      "sha256": "04fae949b8e5201ecfa07fa8702baca8c0eb3198114194b3793789cc72bf23d7",
+      "sha512": "dff6b254f0bb35059010d4794446ce81762c6e1a09b26a67c506b9a4ee25c5b8c66dc90eb3ada7b26e242c4af373c9e0ed5e57cf4f2ec158cca9a6462625c2ae",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit/2.9.3/xunit.2.9.3.nupkg"
     },
     {
       "id": "xunit.abstractions",
       "version": "2.0.3",
-      "type": "Transitive",
-      "dependencies": {},
       "file": "packages/xunit.abstractions.2.0.3.nupkg",
       "size": 75155,
       "sha256": "d03d72fc2df8880448f7a81bddb00e1bcb5c18f323c7e7cc69b4cfa727469403",
       "sha512": "3ca26b8b97f4a8440f16f818e82651f571bc2513a5592742fd960b9240d0b880fef84827fb25a307e61fe7b019f14e864653fbcf7dee0d0e3faf90593deaf624",
-      "nugetContentHash": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
       "source": "https://api.nuget.org/v3-flatcontainer/xunit.abstractions/2.0.3/xunit.abstractions.2.0.3.nupkg"
     },
     {
       "id": "xunit.analyzers",
-      "version": "1.4.0",
-      "type": "Transitive",
-      "dependencies": {},
-      "file": "packages/xunit.analyzers.1.4.0.nupkg",
-      "size": 162077,
-      "sha256": "da6f2291236f133439debb6a86bb93a5066927e9f323d9612e3d31f70e4528ed",
-      "sha512": "927a6e9e610dc214c203ca4a11e3f69717bf64db8fcca0d61d9200df38ff2599cf6999e5402e739211a8ce7f10fbba2ca31fb5ba8c1b0839fb97b0e20e6cb26c",
-      "nugetContentHash": "7ljnTJfFjz5zK+Jf0h2dd2QOSO6UmFizXsojv/x4QX7TU5vEgtKZPk9RvpkiuUqg2bddtNZufBoKQalsi7djfA==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.4.0/xunit.analyzers.1.4.0.nupkg"
+      "version": "1.18.0",
+      "file": "packages/xunit.analyzers.1.18.0.nupkg",
+      "size": 269902,
+      "sha256": "0ce81a98b9df8bd51ae480e6dc9566f4c68e15b4926e6ab997c8f634f3b7a9dd",
+      "sha512": "632f6d380cd59dc1356af0361ab389a14c53993e9f40939cab1b20f5fe773b1ed8ed5fff06d438195f7383baa7a8ccf2cf299a6eb889e7948629bd4729b3ce38",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.analyzers/1.18.0/xunit.analyzers.1.18.0.nupkg"
     },
     {
       "id": "xunit.assert",
-      "version": "2.5.3",
-      "type": "Transitive",
-      "dependencies": {
-        "NETStandard.Library": "1.6.1"
-      },
-      "file": "packages/xunit.assert.2.5.3.nupkg",
-      "size": 113685,
-      "sha256": "f9c6cd1d6c26d67a37d7ac4c26c7733bb4c057b6c8966dddcfc76f28743ae825",
-      "sha512": "e4c1404abd04556d88b7a95ba7caf4b979c17852cd19884f3099140ee9e79dcd5d747190ff042bc6a440677fbd7045e73d77aa7c4397be88820b7bf5ec93b3a4",
-      "nugetContentHash": "MK3HiBckO3vdxEdUxXZyyRPsBNPsC/nz6y1gj/UZIZkjMnsVQyZPU8yxS/3cjTchYcqskt/nqUOS5wmD8JezdQ==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.5.3/xunit.assert.2.5.3.nupkg"
+      "version": "2.9.3",
+      "file": "packages/xunit.assert.2.9.3.nupkg",
+      "size": 246078,
+      "sha256": "bc760e75ef1b775d293a6afb89301836d3e5a87cec265e31dedd430ee61d0c20",
+      "sha512": "c1fab008a0214961b2f4ffdd3ea0c64880673d6dec509e3d3047dc4ea345fb90602708f0b476fd484eda8d866e47cca64ddf1dc31a041a79491e27a36e00eff7",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.assert/2.9.3/xunit.assert.2.9.3.nupkg"
     },
     {
       "id": "xunit.core",
-      "version": "2.5.3",
-      "type": "Transitive",
-      "dependencies": {
-        "xunit.extensibility.core": "[2.5.3]",
-        "xunit.extensibility.execution": "[2.5.3]"
-      },
-      "file": "packages/xunit.core.2.5.3.nupkg",
-      "size": 31024,
-      "sha256": "4c42fab4153158353dad53a3e0a6b10692feb9943fde47195950c3b9e790921c",
-      "sha512": "9380706072e964969dc6d49d36d76df0d1dc8405f11ce9ae2ee50a5a4924bc8c0119be0a54dffe84343e0e639364760074bd25f203abcfd3c845e908425f31c5",
-      "nugetContentHash": "FE8yEEUkoMLd6kOHDXm/QYfX/dYzwc0c+Q4MQon6VGRwFuy6UVGwK/CFA5LEea+ZBEmcco7AEl2q78VjsA0j/w==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.5.3/xunit.core.2.5.3.nupkg"
+      "version": "2.9.3",
+      "file": "packages/xunit.core.2.9.3.nupkg",
+      "size": 33553,
+      "sha256": "aa4550f09c3f2d95a6c62ae43cec22af2edbbd99f722e691ceefeca761fc6a7c",
+      "sha512": "72fdac3b7eea26421b04bddf5c3227dc43d0db32bc2d0e8590c24d9e7d7173d9fc9a8de293451103831f50d0a6c030c2c7cdd9889791ac9d32d7291ab288cd26",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.core/2.9.3/xunit.core.2.9.3.nupkg"
     },
     {
       "id": "xunit.extensibility.core",
-      "version": "2.5.3",
-      "type": "Transitive",
-      "dependencies": {
-        "NETStandard.Library": "1.6.1",
-        "xunit.abstractions": "2.0.3"
-      },
-      "file": "packages/xunit.extensibility.core.2.5.3.nupkg",
-      "size": 276583,
-      "sha256": "223c978158bf0009e294fb03e08ae7aad4abafb520bbbe4382e3e72366d5485b",
-      "sha512": "50cfd206d6f6c0ad47a9ae2846a740bc280c09d72284aecd603a3ca703f4f1eb027501e3b025920ef43c8b05ba37ada7316b95205c90a475bcf8fa065734721e",
-      "nugetContentHash": "IjAQlPeZWXP89pl1EuOG9991GH1qgAL0rQfkmX2UV+PDenbYb7oBnQopL9ujE6YaXxgaQazp7lFjsDyyxD6Mtw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.5.3/xunit.extensibility.core.2.5.3.nupkg"
+      "version": "2.9.3",
+      "file": "packages/xunit.extensibility.core.2.9.3.nupkg",
+      "size": 298787,
+      "sha256": "99ca555fe9b447b1747aff426819db6a2f60b6ee0655caa28c4b91a9ef3d0f48",
+      "sha512": "4b46be8e6205fc3ada2ae27e15f59ba97330be970ac633f719dad0cf3e69af7198b60208d977c374086453fe55216a96a27d91e90df55fff6c4c6694fa4a0369",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.core/2.9.3/xunit.extensibility.core.2.9.3.nupkg"
     },
     {
       "id": "xunit.extensibility.execution",
-      "version": "2.5.3",
-      "type": "Transitive",
-      "dependencies": {
-        "NETStandard.Library": "1.6.1",
-        "xunit.extensibility.core": "[2.5.3]"
-      },
-      "file": "packages/xunit.extensibility.execution.2.5.3.nupkg",
-      "size": 360139,
-      "sha256": "ccded1e24646b2e8e9a3c6809f838776d034bbfaf969e8996b0e80e7707af4a5",
-      "sha512": "535f9b0ad8d5ec76dce17a231aee6ef3da0be86b953b1355192af006195eb05b84e0aeb38f02a4f72ec7698ae7b3936458fea3c3946a53005b9f5358fef0c06c",
-      "nugetContentHash": "w9eGCHl+gJj1GzZSf0VTzYPp/gv4fiUDkr+yR7/Wv9/ucO2CHltGg2TnyySLFjzekkjuxVJZUE+tZyDNzryJFw==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.5.3/xunit.extensibility.execution.2.5.3.nupkg"
+      "version": "2.9.3",
+      "file": "packages/xunit.extensibility.execution.2.9.3.nupkg",
+      "size": 379849,
+      "sha256": "dabc4cb360ede1c01c98e14cc0fe587774693f40679a22fc71794acac5d8d23c",
+      "sha512": "222768052ac6c3f2a15b366c29721c4ada218ffa111598b36d6794bfed213852de30931e8125b942818dce68d0b85f01b91b42c8f410ba459261d3679df3c090",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg"
     },
     {
       "id": "xunit.runner.visualstudio",
-      "version": "2.5.3",
-      "type": "Direct",
-      "dependencies": {},
-      "file": "packages/xunit.runner.visualstudio.2.5.3.nupkg",
-      "size": 572634,
-      "sha256": "19937513dace1a8ad0bd549b193b265e02718f64ed2702710aea3ea21f8d1012",
-      "sha512": "4433134fc4a10e371202c38977834c3937326f06146d198c5996c07b6d796d51b25b85c5b4c6415a3859603f3c2a8221b21d5a23cdb5f7a805ca1b66b7262045",
-      "nugetContentHash": "HFFL6O+QLEOfs555SqHii48ovVa4CqGYanY+B32BjLpPptdE+wEJmCFNXlLHdEOD5LYeayb9EroaUpydGpcybg==",
-      "source": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/2.5.3/xunit.runner.visualstudio.2.5.3.nupkg"
+      "version": "3.1.5",
+      "file": "packages/xunit.runner.visualstudio.3.1.5.nupkg",
+      "size": 1327518,
+      "sha256": "3b9eb9efcf3840695db33b045901420d14d7562141999e06182fb8894faeb124",
+      "sha512": "6ffb6f37d917b54777c124986c2f3421ceb2fdd62561b352bdab588afef58a8ccf857a8ce0468eb87ba3908261f396fec18e9d81fdb993d10d4b2f2337a9a5bd",
+      "projects": [
+        "Tests",
+        "IntegrationTests"
+      ],
+      "kind": "PackageReference",
+      "source": "https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/3.1.5/xunit.runner.visualstudio.3.1.5.nupkg"
     }
   ]
 }
